@@ -1,0 +1,19 @@
+{
+  "name": "art-of-inspiration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alexandruIvan1995/Art-of-Inspiration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandruIvan1995/Art-of-Inspiration/issues"
+  },
+  "homepage": "https://github.com/alexandruIvan1995/Art-of-Inspiration#readme"
+}
