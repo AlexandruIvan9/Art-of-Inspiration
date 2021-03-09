@@ -1,3 +1,4 @@
+
 body {
     font-family: "Open Sans",
       sans-serif;
@@ -6,13 +7,46 @@ body {
 .navbar {
     background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
 }
+
 .navbar-brand {
-    font-style:italic ;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-left: 20px;
+    font-family: 'Trebuchet MS',
+                sans-serif;
     font-size: 2.5em;
+    padding: 2px;
+    font-style: italic;
+}
+
+.introduction {
+    background-image: linear-gradient(#27698f, #0e5279, #29918d);
+    text-align: center;
+    font-family: Verdana, 
+            sans-serif;
+    font-style: italic;
+    color: thistle;
+}
+
+.description {
+    margin-top: 20px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: left;
+    text-indent: 5rem;
+    font-family: monospace;
+    color: rgb(224, 198, 198);
+}
+
+.inspiration {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
 
 }
+
 .footer {
     background-image: linear-gradient(to right, #a3acaa, #999db3, #606170);
     padding: 20px 0;
