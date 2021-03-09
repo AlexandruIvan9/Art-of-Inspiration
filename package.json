@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/alexandruIvan1995/Art-of-Inspiration/issues"
   },
-  "homepage": "https://github.com/alexandruIvan1995/Art-of-Inspiration#readme"
+  "homepage": "https://github.com/alexandruIvan1995/Art-of-Inspiration#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free/css/all.css": "^5.15.2",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "mongodb": "^3.6.4"
+  }
 }
