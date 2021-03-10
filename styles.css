@@ -184,3 +184,61 @@ audio::-webkit-media-controls-play-button {
       text-indent: 40px;
       font-size: 19px;
   }
+
+  #train {
+    position: relative;
+    cursor: pointer;
+    padding-top: 100px;
+  }
+
+  .whatishappiness {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 17px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+      background-color: rgb(228, 236, 156);
+  }
+
+  .pathtohappiness {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 16.5px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(158, 240, 222)
+  }
+
+  .psychology {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 16.5px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(163, 161, 245);
+  }
+
+  .inspirehappiness {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 18px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(219, 144, 144, 0.829);
+  }
