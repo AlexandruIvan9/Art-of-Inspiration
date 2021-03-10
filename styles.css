@@ -108,3 +108,21 @@ a, a:hover {
     text-decoration: none;
     background-color: thistle;
 }
+
+.carousel {
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .science {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      text-indent: 80px;
+      font-size: 22px;
+      background-color: rgb(50, 182, 182);
+
+  }

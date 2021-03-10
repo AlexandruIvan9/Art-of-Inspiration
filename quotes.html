@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<title>Art of Inspiration</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top bg-light">
+        <a class="navbar-brand" href="index.html">Art of Inspiration</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><b>About</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><b>Quotes</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><b>What is Art of Inspiration?</b></a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
+                Members</b>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#loginModal" href="#">Login</a>
+                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#forgotModal" href="#">Forgot Password?</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Contact Us</a>
+              </div>
+            </li>
+        </ul>       
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+    </nav>
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Login</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label class="sr-only" for="loginEmail">Email address</label>
+                            <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                        </div>
+                        <div class="form-group col-12">
+                            <label class="sr-only" for="loginPassword">Password</label>
+                            <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label"> Remember me</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <div id="forgotModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-md-12 al">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 style="text-align: center;"><i class="fa fa-lock fa-4x"></i></h2>
+                    <h3 class="modal-title" style="text-align: center;">Forgot Password?</h3>
+                    <p style="text-align: center;">You can reset your password here.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                            <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
+                    </div>
+                        <input type="hidden" class="hide" name="token" id="token" value=""> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="container">
+      <div class="row row-content">
+          <div class="col-md-8 mx-auto">
+            <div id="quotesCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#quotesCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#quotesCarousel" data-slide-to="1"></li>
+                <li data-target="#quotesCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/einstein.jpg" alt="einstein" />
+                  <div class="carousel-caption">
+                    <h3>Albert Einstein</h3>
+                    <p class="d-none d-sm-block">Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning." </p>
+                  </div>
+                </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/disney.jpg" alt="disney" />
+                <div class="carousel-caption">
+                  <h3>Walt Disney</h3>
+                  <p class="d-none d-sm-block">"All our dreams can come true if we have the courage to pursue them."</p>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/denzel.jpg" alt="denzel" />
+                <div class="carousel-caption">
+                  <h3>Denzel Washington</h3>
+                  <p class="d-none d-sm-block">"Success? I don't know what that word means. I'm happy. But success, that goes back to what in somebody's eyes success means. For me, success is inner peace. That's a good day for me."
+                  </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/gandhi.jpg" alt="gandhi" />
+                <div class="carousel-caption">
+                  <h3>Mahatma Gandhi</h3>
+                  <p class="d-none d-sm-block">"Live as if you were to die tomorrow. Learn as if you were to live forever."</p>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/william.jpg" alt="william" />
+                <div class="carousel-caption">
+                  <h3>William James</h3>
+                  <p class="d-none d-sm-block">"Be not afraid of life. Believe that life is worth living, and your belief will help create the fact."</p>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/audrey.jpeg" alt="audrey" />
+                <div class="carousel-caption">
+                  <h3>Audrey Hepburn</h3>
+                  <p class="d-none d-sm-block">"Nothing is impossible, the word itself says “I’m possible”!"</p>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/lombardi.jpg" alt="lombardi" />
+                <div class="carousel-caption">
+                  <h3>Vince Lombardi</h3>
+                  <p class="d-none d-sm-block">"Perfection is not attainable, but if we chase perfection we can catch excellence."</p>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/lionking.jpg" alt="lionking" />
+                <div class="carousel-caption">
+                  <h3>Michael Jordan</h3>
+                  <p class="d-none d-sm-block">"I’ve missed more than 9000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed. "</p>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/holland.jpeg" alt="holland" />
+                <div class="carousel-caption">
+                  <h3>Josiah Gilbert Holland</h3>
+                  <p class="d-none d-sm-block">"There is no royal road to anything. One thing at a time, all things in succession. That which grows fast, withers as rapidly. That which grows slowly, endures."</p>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/mary.jpg" alt="mary" />
+                <div class="carousel-caption">
+                  <h3>Mary Kay Ash</h3>
+                  <p class="d-none d-sm-block">"Don't limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve."</p>
+              </div>
+              </div>
+          </div>
+            <a class="carousel-control-prev" href="#quotesCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#quotesCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+      </div>
+    </div>
+    <div class="container science">
+        <div class="row row-content">
+            <div class="col">
+                <h1 style="text-align: center;">The Science Behind Inspirational Quotes</h1>
+                    <p> </p>
+                    <p> When things get tough, many people turn to a motivational quote for a bit of inspiration. Some of these pithy sayings have become celebrated parts of society’s lexicon. Some include:
+                    </p>
+                    
+                    <p> “I have not failed. I’ve just found 10,000 ways that won’t work.” —Thomas Edison</p>
+                    
+                    <p> “No one can make you feel inferior without your consent.” —Eleanor Roosevelt</p>
+                    
+                    <p> “If you can’t fly then run, if you can’t run then walk, if you can’t walk then crawl, but whatever you do you have to keep moving forward.” —Rev. Martin Luther King, Jr.</p>
+                    
+                    <p> But out of all of the things that people—famous, influential, and otherwise—have to say, what makes some turns of phrase so powerful that they become mantras for generations?
+                        Depending on whom you ask, the appeal appears to lie in a combination of good wordsmithing, motivational psychology, and a measure of self-selection.
+                        Obviously, people who tend to feel inspired by motivational quotes are going to find them more resonant than those who don’t find simple phrases and sayings to be particularly meaningful, says psychologist and motivation expert Jonathan Fader, PhD, founder of the Union Square Practice in New York City.
+                    </p>
+
+                    <p> Phrasing contributes to effectiveness—for better or worse. Farnsworth points to a 2000 study by cognitive scientists at Lafayette College that found that when people were shown two statements of the same pithy saying, study participants were more likely to say the rhyming aphorism seemed true.
+
+                        “As O.J. Simpson’s lawyer once said, ‘If the glove doesn’t fit, you must acquit.’ The study shows that the way an idea is expressed can affect judgments about its merit,” he says. A more upbeat and motivational example is, “Whatever the mind of man can conceive and believe, it can achieve,” by Napoleon Hill.
+                        
+                        Farnsworth says the details of wording make a difference. While there are many ways to say the same thing, one may be more pleasing and convincing than all the others because of the way words are arranged. For example, parallel construction where two halves of a claim are “attractively balanced” can be effective, he adds.
+                        
+                        “An example is the use of parallel construction, so that the two halves of a claim are attractively balanced, such as ‘marry in haste, repent at leisure.’ The reversal of structure, or ‘chiasmus,’ is also attractive—‘ask not what your country can do for you; ask what you can do for your country,’” he says.
+
+                    </p>
+
+                    <p> Humans are aspirational. We want to look up to role models and leaders and follow what they ask. Leaders and their words–inspirational quotes–affect us on a primal level.
+
+                        Words from recognized leaders in business, politics, and the arts may also hold more gravitas because of the assumption that when people are in public positions, they must be accomplished, wise, or otherwise exceptional to have achieved those positions. Those perceptions can make messages from such leaders more powerful.
+                        
+                        For people open to their message, well-structured messages that use strong imagery and appeal to our aspirational nature can be meaningful and powerful in changing our thinking and helping us see something in ourselves that we want to change or overcome, Fader says. That’s one of the main reasons they’re passed on for generations.
+
+                    </p>
+            </div>
+        </div>
+    </div>
+
+<footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="commonAi col-3 col-sm-3">
+          <h5 style="color: black;">Common AI Focal Points</h5>
+          <ul class="list-unstyled">
+            <li><a href="#"> Happiness</a></li>
+            <li><a href="#"> Success</a></li>
+            <li><a href="#"> Love</a></li>
+            <li><a href="#"> Health</a></li>
+            <li><a href="#"> Money</a></li>
+          </ul>
+        </div>
+        <div class="socialMediaLinks col-4 col-sm-5 text-center">
+          <h5>Social</h5>
+          <a href="https://twitter.com" class="fa fa-twitter"></a>
+          <a href="https://facebook.com" class="fa fa-facebook"></a>
+          <a href="https://pinterest.com" class="fa fa-pinterest"></a>
+          <a href="https://instagram.com" class="fa fa-instagram"></a>
+          <a href="https://youtube.com" class="fa fa-youtube"></a>
+        </div>
+        <div class="col-3 text-center">
+            <h6 style="color: black;">Contact Us</h6>
+          <a role="button" class="btn btn-light" href="tel:+13063693639"><i class="fa fa-phone fa-sm"></i>
+            1-306-369-3639</a><br />
+          <a role="button" class="btn btn-light" href="mailto:artofinspiration@ai.com"><i class="fa fa-envelope fa-sm"></i>
+            artofinspiration@ai.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
