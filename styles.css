@@ -98,7 +98,7 @@ a, a:hover {
             sans-serif;
     font-style: italic;
     color: white;
-    padding-top: 120px;
+    padding-top: 40px;
     padding-bottom: 60px;
     text-align: left;
     text-indent: 80px;
@@ -110,19 +110,61 @@ a, a:hover {
 }
 
 .carousel {
-    padding-top: 120px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
-  }
+    }
   
-  .science {
-      padding-top: 30px;
-      padding-bottom: 30px;
-      text-indent: 80px;
-      font-size: 22px;
-      background-color: rgb(90, 209, 209);
+.science {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-indent: 80px;
+    font-size: 22px;
+    background-color: rgb(90, 209, 209);
 
+    }
+
+audio {
+    height:50px; 
+    width:300px;
+    align-content: center;
+    }
+
+audio:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(2px 3px 3px #333);
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color:green;
+}
+
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 3px 3px white);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+.audio-container-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 3px 3px white);
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+
+  .audio-container-quotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 3px 3px white);
+    padding-top: 120px;
+    padding-bottom: 20px;
   }
