@@ -168,3 +168,12 @@ audio::-webkit-media-controls-play-button {
     padding-top: 120px;
     padding-bottom: 20px;
   }
+
+  .contactus {
+      padding-top: 120px;
+      padding-bottom: 40px;
+  }
+
+  .feedback {
+      padding-bottom: 20px;
+  }
