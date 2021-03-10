@@ -177,3 +177,10 @@ audio::-webkit-media-controls-play-button {
   .feedback {
       padding-bottom: 20px;
   }
+
+  .terms {
+      padding-top: 120px;
+      padding-bottom: 40px;
+      text-indent: 40px;
+      font-size: 19px;
+  }
