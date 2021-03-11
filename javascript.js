@@ -1,4 +1,4 @@
-// Happiness
+// Happiness, Love, Money
 let start = Date.now();
 
 let timer = setInterval(function() {
@@ -201,5 +201,3 @@ var cn;
                 });
 
             }   
-    
-// Money
