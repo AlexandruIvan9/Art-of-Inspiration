@@ -17,16 +17,20 @@ let timer = setInterval(function() {
 function draw(timePassed) {
   train.style.left = timePassed / 5 + 'px';
 }
-
 // Health
 var img = new Image();
+
+// User Variables - customize these to change the image being scrolled, its
+// direction, and the speed.
 
 img.src = 'https://mdn.mozillademos.org/files/4553/Capitan_Meadows,_Yosemite_National_Park.jpg';
 var CanvasXSize = 800;
 var CanvasYSize = 200;
-var speed = 30; 
+var speed = 30; // lower is faster
 var scale = 1.05;
-var y = -4.5; 
+var y = -4.5; // vertical offset
+
+// Main program
 
 var dx = 0.75;
 var imgW;
@@ -41,63 +45,68 @@ img.onload = function() {
     imgH = img.height * scale;
 
     if (imgW > CanvasXSize) {
-        
+        // image larger than canvas
         x = CanvasXSize - imgW;
     }
     if (imgW > CanvasXSize) {
-       
+        // image width larger than canvas
         clearX = imgW;
     } else {
         clearX = CanvasXSize;
     }
     if (imgH > CanvasYSize) {
+        // image height larger than canvas
         clearY = imgH;
     } else {
         clearY = CanvasYSize;
     }
 
+    // get canvas context
     ctx = document.getElementById('canvas').getContext('2d');
 
+    // set refresh rate
     return setInterval(draw, speed);
 }
 
 function draw() {
-    ctx.clearRect(0, 0, clearX, clearY);
+    ctx.clearRect(0, 0, clearX, clearY); // clear the canvas
 
+    // if image is <= Canvas Size
     if (imgW <= CanvasXSize) {
-        
+        // reset, start from beginning
         if (x > CanvasXSize) {
             x = -imgW + x;
         }
-       
+        // draw additional image1
         if (x > 0) {
             ctx.drawImage(img, -imgW + x, y, imgW, imgH);
         }
-        
+        // draw additional image2
         if (x - imgW > 0) {
             ctx.drawImage(img, -imgW * 2 + x, y, imgW, imgH);
         }
     }
 
-    
+    // image is > Canvas Size
     else {
-        
+        // reset, start from beginning
         if (x > (CanvasXSize)) {
             x = CanvasXSize - imgW;
         }
-        
+        // draw additional image
         if (x > (CanvasXSize-imgW)) {
             ctx.drawImage(img, x - imgW + 1, y, imgW, imgH);
         }
     }
-    
+    // draw image
     ctx.drawImage(img, x, y,imgW, imgH);
-    
+    // amount to move
     x += dx;
 }
 
-// Success    
-    var cn; 
+// Success
+var cn;
+            //= document.getElementById('cw');
             var c;
             var u = 10;
             const m = {
@@ -129,7 +138,7 @@ function draw() {
                     var t = new ob(innerWidth / 2,innerHeight / 2,5,"red",Math.random() * 200 + 20,2);
                     a.push(t);
                 }
-                
+                //cn.style.backgroundColor = "#700bc8";
 
                 c.lineWidth = "2";
                 c.globalAlpha = 0.5;
@@ -151,7 +160,8 @@ function draw() {
                     a[i] = new ob(innerWidth / 2,innerHeight / 2,4,gc(),Math.random() * 200 + 20,0.02);
 
                 }
-               
+                //  a[0] = new ob(innerWidth / 2, innerHeight / 2, 40, "red", 0.05, 0.05);
+                //a[0].dr();
             }
             function ob(x, y, r, cc, o, s) {
                 this.x = x;
@@ -190,24 +200,9 @@ function draw() {
                     e.dr();
                 });
 
-            }
-
+            }   
+    
 // Love
-let start = Date.now();
 
-let timer = setInterval(function() {
-  
-  let timePassed = Date.now() - start;
 
-  if (timePassed >= 2000) {
-    clearInterval(timer); 
-    return;
-  }
-
-  draw(timePassed);
-
-}, 20);
-
-function draw(timePassed) {
-  heart.style.left = timePassed / 5 + 'px';
-}
+// Money
