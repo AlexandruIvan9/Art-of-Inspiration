@@ -242,3 +242,61 @@ audio::-webkit-media-controls-play-button {
     padding-bottom: 20px;
     background-color: rgba(219, 144, 144, 0.829);
   }
+
+  #canvas {
+    padding-left: 60px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+
+  .whatishealth {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 16.5px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(86, 210, 219, 0.856);
+  }
+
+  .mentalhealth {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 16.5px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(158, 240, 222)  
+  }
+
+  .spiritualhealth {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 16.5px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(89, 133, 255);  
+  }
+
+  .healthy {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 16.5px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: aquamarine;  
+  }
