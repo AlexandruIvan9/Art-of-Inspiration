@@ -300,3 +300,60 @@ audio::-webkit-media-controls-play-button {
     padding-bottom: 40px;
     background-color: aquamarine;  
   }
+
+  #cw {
+    position: fixed;
+    z-index: -1;
+}
+
+.success {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 17px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(216, 231, 83); 
+}
+
+.plansuccess {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 17.5px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(80, 218, 52);
+}
+
+.purposesuccess {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 17.5px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(90, 240, 153);
+}
+
+.findpurpose {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 17px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: rgb(178, 192, 250);
+}
