@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Javascript -->
+    <script type="text/javascript" src="javascript.js"></script>
 
     <title>Art of Inspiration</title>
 </head>
@@ -132,50 +134,93 @@
       </div>
   </div>
   </header>
-
   <div class="container">
-    <div class="row row-content inspiration">
+    <div class="row-content">
+        <div class="col">
+          <img id="money" src="https://www.creativefabrica.com/wp-content/uploads/2019/03/Money-icon-by-ahlangraphic-90-580x386.jpg">
+          <script>
+              money.onclick = function() {
+              let start = Date.now();
+
+              let timer = setInterval(function() {
+                  let timePassed = Date.now() - start;
+
+                  money.style.left = timePassed / 5 + 'px';
+
+                  if (timePassed > 2000) clearInterval(timer);
+
+              }, 20);
+              }
+          </script>
+        </div>
+  </div>
+  <div class="row-content" style="padding-top: 20px;">
+      <div class="col">
+          <audio controls>
+          <source src="media/money.mp3" type="audio/mpeg">
+          </audio>
+      </div>
+  </div>
+</div>
+  <div class="container">
+    <div class="row row-content money">
         <div class="col-sm-8 order-sm-first col-md-6">
-          <h3 class="text-sm-left"><b>What is inspiration?</b></h3>
-          <p class="d-none d-sm-block">Inspiration has an unusual history in that its figurative sense appears to predate its literal one. It comes from the Latin inspiratus (the past participle of inspirare, “to breathe into, inspire”) and in English has had the meaning “the drawing of air into the lungs” since the middle of the 16th century. This breathing sense is still in common use among doctors, as is expiration (“the act or process of releasing air from the lungs”). However, before inspiration was used to refer to breath it had a distinctly theological meaning in English, referring to a divine influence upon a person, from a divine entity; this sense dates back to the early 14th century. The sense of inspiration often found today is considerably newer than either of these two senses, dating from the 19th century.</p>
+          <h3 class="text-sm-left"><b>What is Money?</b></h3>
+          <p class="d-none d-sm-block">Money is any item or verifiable record that is generally accepted as payment for goods and services and repayment of debts, such as taxes, in a particular country or socio-economic context. The main functions of money are distinguished as: a medium of exchange, a unit of account, a store of value and sometimes, a standard of deferred payment.Any item or verifiable record that fulfils these functions can be considered as money.
+
+            Money is historically an emergent market phenomenon establishing a commodity money, but nearly all contemporary money systems are based on fiat money. Fiat money, like any check or note of debt, is without use value as a physical commodity. It derives its value by being declared by a government to be legal tender; that is, it must be accepted as a form of payment within the boundaries of the country, for all debts, public and private. Counterfeit money can cause good money to lose its value.
+            
+            The money supply of a country consists of currency (banknotes and coins) and, depending on the particular definition used, one or more types of bank money (the balances held in checking accounts, savings accounts, and other types of bank accounts). Bank money, which consists only of records (mostly computerized in modern banking), forms by far the largest part of broad money in developed countries.</p>
         </div>
         <div class="col-sm-4 order-sm-last col-md-6">
           <div class="media">
-            <img class="d-flex mr-3 img-thumbnail" src="img/inspiration.jpg" alt="inspiration" />
+            <img class="d-flex mr-3 img-thumbnail" src="img/money.jpg" alt="money" />
           </div>
         </div>
       </div>
-      <div class="row row-content inspiration">
+      <div class="row row-content economics">
         <div class="col-sm-6">
             <div class="media">
-                <img class="d-flex mr-3 img-thumbnail" src="img/dreams.jpg" alt="dreams" />
+                <img class="d-flex mr-3 img-thumbnail" src="img/economics.jpg" alt="economics" />
             </div>
             </div>
                 <div class="col-sm-8 order-sm-last col-md-6">
-                  <h4 class="order-sm-last"><b>How to get inspired</b></h4>
-                  <p class="d-none d-sm-block">Inspiration cannot be forced. Anyone who says otherwise hasn’t spent hours laboring over the same piece of work with nothing but a blank mind full of frustration.The sooner you accept this, the easier it will be to capture that lightning in a bottle and get inspired once more.I’m no psychologist but I seem to produce my best ideas and work at the most unexpected times. The harder I try to force myself to generate ideas, the harder it is and the worse the final results tend to be.So accept it.Take a deep breath in, blow out your frustration, and start on something else. If possible either take a break or work on something less creative to let your mind recuperate and process the information you’ve given it.</p>
+                  <h4 class="order-sm-last"><b>Money in Economics</b></h4>
+                  <p class="d-none d-sm-block">Money is often defined in terms of the three functions or services that it provides. Money serves as a medium of exchange, as a store of value, and as a unit of account.
+                    Medium of exchange. Money's most important function is as a medium of exchange to facilitate transactions. Without money, all transactions would have to be conducted by barter, which involves direct exchange of one good or service for another. The difficulty with a barter system is that in order to obtain a particular good or service from a supplier, one has to possess a good or service of equal value, which the supplier also desires. In other words, in a barter system, exchange can take place only if there is a double coincidence of wants between two transacting parties. The likelihood of a double coincidence of wants, however, is small and makes the exchange of goods and services rather difficult. Money effectively eliminates the double coincidence of wants problem by serving as a medium of exchange that is accepted in all transactions, by all parties, regardless of whether they desire each others' goods and services.
+                    Furthermore, money is an easily transported store of value that is available in a number of convenient denominations.
+                  </p>
                 </div>
         </div>
-        <div class="row row-content inspiration">
+        <div class="row row-content happymoney">
             <div class="col-sm-8 oder-sm-first col-md-6">
-              <h5 class="text-sm-left"><b>Find what inspires you</b></h5>
-              <p class="d-none d-sm-block">How do we overcome these foreboding feelings and instead shift our focus to the things that move us? Let’s start with what doesn’t inspire you. If, like me, your focus wanes midday and you find yourself doom scrolling through Twitter, only to feel even less motivated to work, maybe don’t do that. Easier said than done, I know.Start by making a list of the things you spend your time doing during an average day. How do you feel before you do each thing? How do you feel afterward? Increase time spent on things that leave you feeling energized, excited, and creative and set aside dedicated space for them in your schedule. How do you limit those things that do the opposite? Run the same exercise with the people you interact with. Now, prioritize time with friends who bring value to your conversations.</p>
+              <h5 class="text-sm-left"><b>Can money buy happiness?</b></h5>
+              <p class="d-none d-sm-block">Money allows us to meet our basic needs to buy food and shelter and pay for healthcare. Meeting these needs is essential, and if we don’t have enough money to do so the well-being of the community as a whole suffers greatly.  We all have a responsibility to work towards a society where everyone has access to adequate food, shelter, and healthcare. Where we are all safe. 
+                Having enough money also provides a sense of security, one that is often missing when people worry about unforeseen medical expenses or losing their job. A 2017 study found that 50% of Americans worry about their financial situation, and it impacts their mental health, relationships, diet, even their work performance.  There is no denying that having enough money to cover expenses and put some aside is important for our well-being.
+                While having enough money to meet basic needs and provide a safety net is essential to wellbeing, there are indications that additional income may not significantly increase our well-being and may even have a negative effect in some cases.
+              </p>
               </div>
                 <div class="col-sm-4 order-sm-last col-md-6">
                   <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/sunrise.jpg" alt="sunrise" />
+                    <img class="d-flex mr-3 img-thumbnail" src="img/happymoney.jpg" alt="happymoney" />
                   </div>
                 </div>
             </div>
-        <div class="row row-content inspiration">
+        <div class="row row-content moneypurpose">
             <div class="col-sm-6">
               <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/lion.jpg" alt="lion" />
+                    <img class="d-flex mr-3 img-thumbnail" src="img/moneypurpose.jpg" alt="moneypurpose" />
               </div>
             </div>
             <div class="col-sm-8 order-sm-last col-md-6">
-                    <h4 class="order-sm-last"><b>Turn inspiration into action</b></h4>
-                        <p class="d-none d-sm-block">Having inspirational notes is only the first step after inspiration, and it is not enough to turn your inspiration into action. For example, if you find something inspirational in the book, you highlight the quote and write a note about the inspirational quote. Sometimes, you can add some additional explanations or descriptions of the quote inside your inspirational notebook. Now, you have a book with different inspirational quotes, and you can bring the sparkle of inspiration again, and if you don’t take a real action step, you will not transform it into action.So, after you write your notes, start with the planning stage. When you are at this stage, don’t over-plan what you need to do. It is enough to write three to five most important steps you need to take.</p>
+                    <h4 class="order-sm-last"><b>Money and Purpose</b></h4>
+                        <p class="d-none d-sm-block">When you were a kid, were you told by your parents, teachers, peers, or religious leaders what you should do in life? It may be to earn a lot of money, to be successful, to be respectable, to be a filial child, to contribute to society, or to serve a higher entity.
+
+                          Whatever it is, what role did you play in identifying it? Did you have a say in determining this goal? Did you brainstorm and think about all the things you want to do or who you want to be, before deciding on what you want to do?
+                          
+                          The likelihood is that somehow, somewhere, people decided how you should lead your life on your behalf without including you in the decision-making process. What seemed like a choice was no more than a series of suggestions and conditioned messages that you received since young, creating the impression that your life choices were your choices, when they were really just instructions that you were asked to follow, or at best — a small subset of “choices” you were made to pick from.
+                          These are false or imposed purposes — purposes imposed on you by others. False purposes are not your true purposes. They have been glossed over and packaged as unquestionable truths. Because of the way they are subtly pressed into our lives, and because of all the structures that seem to support these beliefs — from media reports to religious structures to school textbooks — few people challenge these beliefs. To them, this is the gospel truth. To them, this is the way of life.
+                        </p>
             </div>
         </div>
     </div>

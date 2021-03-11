@@ -202,7 +202,4 @@ var cn;
 
             }   
     
-// Love
-
-
 // Money

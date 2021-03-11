@@ -416,4 +416,60 @@ audio::-webkit-media-controls-play-button {
     background-color: rgb(201, 158, 161); 
   }
 
+  #money {
+    position: relative;
+    cursor: pointer;
+    padding-top: 20px;
+  }
+
+  .money {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 18.1px;
+    font-style: italic;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+    background-color: rgb(194, 152, 152); 
+  }
   
+  .economics {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 18.1px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(185, 175, 175);
+  }
+
+  .happymoney {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 16.5px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(146, 145, 145);
+  }
+
+  .moneypurpose {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 18.2px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: rgb(240, 146, 140);
+  }
