@@ -10,6 +10,9 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="styles.css">
      
+     <!-- Javascript -->
+     <script type="text/javascript" src="javascript.js"></script>
+
      <title>Art of Inspiration</title>
 </head>
 <body>
@@ -131,7 +134,95 @@
       </div>
   </div>
   </header>
+  <div class="container">
+    <div class="row-content">
+        <div class="col">
+          <img id="heart" src="https://www.redcross.org.au/imageprocessor_cache/f/5/4/5/8/3/f545837ac3f93783cdafc94edc461c815d753d1e.jpg">
+          <script>
+              heart.onclick = function() {
+              let start = Date.now();
 
+              let timer = setInterval(function() {
+                  let timePassed = Date.now() - start;
+
+                  heart.style.left = timePassed / 5 + 'px';
+
+                  if (timePassed > 2000) clearInterval(timer);
+
+              }, 20);
+              }
+          </script>
+        </div>
+  </div>
+  <div class="row-content" style="padding-top: 20px;">
+      <div class="col">
+          <audio controls>
+          <source src="media/love.mp3" type="audio/mpeg">
+          </audio>
+      </div>
+  </div>
+</div>
+    
+    <div class="container">
+    <div class="row row-content definitionlove">
+        <div class="col-sm-8 order-sm-first col-md-6">
+          <h3 class="text-sm-left"><b>Definition of Love</b></h3>
+          <p class="d-none d-sm-block">Love encompasses a range of strong and positive emotional and mental states, from the most sublime virtue or good habit, the deepest interpersonal affection, to the simplest pleasure. An example of this range of meanings is that the love of a mother differs from the love of a spouse. Love refers to a feeling of strong attraction and emotional attachment.
+                Love is considered to be both positive and negative, with its virtue representing human kindness, compassion, and affection, as "the unselfish loyal and benevolent concern for the good of another" and its vice representing human moral flaw, akin to vanity, selfishness, amour-propre, and egotism, as potentially leading people into a type of mania, obsessiveness or codependency. It may also describe compassionate and affectionate actions towards other humans, one's self or animals. Love acts as a major facilitator of interpersonal relationships and, owing to its central psychological importance, is one of the most common themes in the creative arts.
+            </p>
+        </div>
+        <div class="col-sm-4 order-sm-last col-md-6">
+          <div class="media">
+            <img class="d-flex mr-3 img-thumbnail" src="img/definitionlove.jpg" alt="definitionlove" />
+          </div>
+        </div>
+      </div>
+      <div class="row row-content poweroflove">
+        <div class="col-sm-6">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail" src="img/poweroflove.jpg" alt="poweroflove" />
+            </div>
+            </div>
+                <div class="col-sm-8 order-sm-last col-md-6">
+                  <h4 class="order-sm-last"><b>The Power of Love</b></h4>
+                  <p class="d-none d-sm-block">There are people who say love can move mountains. This might not be physically possible, but Dashrath Manjhi, also known as the ‘Mountain Man’, came quite close. In one day of his life, his wife fell while crossing a nearby hill and hurt herself seriously. She needed quick medical assistance, but that wasn’t possible due to the hill that isolated their small village from the next town. Tragically enough, his wife died from the serious injuries before Dashrath could do anything about it. It was the night when Dashrath Manjhi decided to carve a small path through the mountain in order to give his village easier access to medical assistance. 
+                         But after working for 22 years with the greatest determination and willpower, a path was carved into the hill. Even though he was initially mocked and ridiculed for his mission to give his hometown easier access to the nearby town, he finally succeeded. His life’s work helped to reduce the distance between the two towns from 55 km to only 15 km, so that never again such a thing would happen.
+                  </p>
+                </div>
+        </div>
+        <div class="row row-content impactoflove">
+            <div class="col-sm-8 oder-sm-first col-md-6">
+              <h5 class="text-sm-left"><b>The Impact of Love in Life</b></h5>
+              <p class="d-none d-sm-block">Love comes in many forms: the love between friends, spouses, partners, relatives, and even between pets and their owners can be a transformative and amazingly fulfilling experience.
+
+                But, did you know that love can actually improve your health, both physically and emotionally? It’s true, research shows that love in all its splendor can put you on the road to health and happiness.
+                
+                From how you give and receive love to the ways you express affection, it turns out that this emotion can enrich your life and benefit your well-being beyond just making you feel warm and fuzzy.
+                If there’s one thing the world always needs more of, it’s love. Not only can love change your life for the better every single time you’re fortunate enough to give or receive it, but research shows that it can make you and your loved ones healthier.
+            </p>
+              </div>
+                <div class="col-sm-4 order-sm-last col-md-6">
+                  <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/impactoflove.jpg" alt="impactoflove" />
+                  </div>
+                </div>
+            </div>
+        <div class="row row-content spirituallove">
+            <div class="col-sm-6">
+              <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/spirituallove.jpg" alt="spirituallove" />
+              </div>
+            </div>
+            <div class="col-sm-8 order-sm-last col-md-6">
+                    <h4 class="order-sm-last"><b>Spiritual Love</b></h4>
+                        <p class="d-none d-sm-block">What is a spiritual love? As with many questions about our spirituality, there isn’t one definition or example of a spiritual love. That said, spiritual love can refer to a love that is rooted in or supported by a deep spiritual connection that helps us find meaning in life. Sometimes these spiritual loves are meant to last, and sometimes they’re meant to merely guide us in the right direction and then leave us to it. Dr. Alise Holland explains: “People come into our lives for either life blessings or life lessons. When partners are connected to their spirituality, then they can identify the purpose of a relationship.”
+                            So, how can we determine a partner’s purpose? Sometimes, their purpose isn’t revealed until later in the relationship. That said, as Holland prefaced, when we take the time to connect to our spiritual selves—to meditate, spend time in nature, surrender to art, worship our religion, or tap into our spirituality in another way—the answers become clear.
+                            Remember, spirituality is connecting to something bigger than ourselves. It’s practicing peace and purpose, which might involve asking ourselves questions like, “How can I find fulfillment?” and, “How can I live the best life possible?” While some people connect to their spiritual selves by turning to their religion, and others find it in nature or art, our spirituality often has a heavy influence on every area of life. 
+                            A lack of spirituality can harm relationships because individuals may not understand who they are fully. Therefore, if they are not aware of their life purpose, then they may select partners who are not in support of their life purpose. For instance, individuals who are working toward entrepreneurship need to make sure that they are connecting with others who are community helpers and have a heart to serve and a passion to be a beacon of light for others. If they do not select a partner who has a complementary or shared interest, then there will be conflict regarding their choices resulting in communication breakdown and other negativity that will impede the progress of the relationship, as well as impact their lives.
+                        </p>
+            </div>
+        </div>
+    </div>
     <footer class="site-footer">
         <div class="container">
         <div class="row">

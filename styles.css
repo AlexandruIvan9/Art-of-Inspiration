@@ -357,3 +357,61 @@ audio::-webkit-media-controls-play-button {
     padding-bottom: 40px;
     background-color: rgb(178, 192, 250);
 }
+
+#heart {
+    position: relative;
+    cursor: pointer;
+    padding-top: 80px;
+  }
+
+  .definitionlove {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 17px;
+    font-style: italic;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: rgb(245, 121, 158);  
+  }
+
+  .poweroflove {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 16.5px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(241, 82, 241);  
+  }
+
+  .impactoflove {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 17px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 20px;  
+    background-color: rgb(247, 167, 236);
+  }
+
+  .spirituallove {
+    text-align-last: center;
+    font-family: Arial,
+            sans-serif;
+    text-indent: 30px;
+    text-align: left;
+    font-size: 17.1px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-bottom: 40px;  
+    background-color: rgb(201, 158, 161); 
+  }
