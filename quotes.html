@@ -11,129 +11,129 @@
 <title>Art of Inspiration</title>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-sm navbar-light sticky-top bg-light">
-        <a class="navbar-brand" href="index.html">Art of Inspiration</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <a class="navbar-brand" href="index.html">Art of Inspiration</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aiNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="aiNavbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"><b>Home</b></a>
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="quotes.html">
+                Quotes</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Focal Points
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" role="button" href="happiness.html">Happiness</a>
+                  <a class="dropdown-item" role="button" href="health.html">Health</a>
+                  <a class="dropdown-item" role="button" href="success.html">Success</a>
+                  <a class="dropdown-item" role="button" href="love.html">Love</a>
+                  <a class="dropdown-item" role="button" href="money.html">Money</a>
+            </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html"><b>About</b></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><b>Quotes</b></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
-                  Common AI Focal Points</b>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Members
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" role="button" href="happiness.html">Happiness</a>
-                      <a class="dropdown-item" role="button" href="health.html">Health</a>
-                      <a class="dropdown-item" role="button" href="success.html">Success</a>
-                      <a class="dropdown-item" role="button" href="love.html">Love</a>
-                      <a class="dropdown-item" role="button" href="money.html">Money</a>
-              </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
-                Members</b>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#loginModal" href="#">Login</a>
-                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#forgotModal" href="#">Forgot Password?</a>
+                  <a class="dropdown-item" role="button" data-toggle="modal" data-target="#loginModal" href="#">Login</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="contactus.html">Contact Us</a>
-              </div>
-            </li>
-        </ul>       
+                  <a class="dropdown-item" href="contactus.html">Contact Us</a>
+                </div>
+              </li>
+            </ul>       
             <form class="form-inline">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
             </form>
+        </div>
     </nav>
-        <div id="loginModal" class="modal fade" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title">Login</h3>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-            <div class="container-fluid">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-12">
-                            <label class="sr-only" for="loginEmail">Email address</label>
-                            <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                        </div>
-                        <div class="form-group col-12">
-                            <label class="sr-only" for="loginPassword">Password</label>
-                            <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                        </div>
-                        <div class="col">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label"> Remember me</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                        <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title">Login</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+  </div>
+  <div class="modal-body">
+      <div class="container-fluid">
+          <form>
+              <div class="form-row">
+                  <div class="form-group col-12">
+                      <label class="sr-only" for="loginEmail">Email address</label>
+                      <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                  </div>
+                  <div class="form-group col-12">
+                      <label class="sr-only" for="loginPassword">Password</label>
+                      <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                  </div>
+                  <div class="col">
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label"> Remember me</label>
+                      </div>
+                          <a class="nav-item" role="button" data-toggle="modal" href="#" data-target="#forgotModal">
+                            <button type="button" class="btn btn-link btn-sm" style="margin-top: 15px;">Forgot Password ?</button>
+                          </a> 
+                      </div>
+                  </div>
+              <div class="form-row">
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+              </div>
+          </form>
+      </div>
+  </div>
 </div>
 </div>
-    <div id="forgotModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-md-12 al">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>  
+<div id="forgotModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-12 al">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h2 style="text-align: center;"><i class="fa fa-lock fa-4x"></i></h2>
                     <h3 class="modal-title" style="text-align: center;">Forgot Password?</h3>
                     <p style="text-align: center;">You can reset your password here.</p>
-                    </div>
-                </div>
-            </div>
-    </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <form>
-                    <div class="form-row">
-                        <div class="form-group col-12">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
-                            <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
-                    </div>
-                        <input type="hidden" class="hide" name="token" id="token" value=""> 
-                    </form>
-                </div>
             </div>
         </div>
     </div>
 </div>
+<div class="modal-body">
+      <div class="container-fluid">
+          <form>
+              <div class="form-row">
+                  <div class="form-group col-12">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                      <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
+                  </div>
+              </div>
+              <div class="form-row">
+                  <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
+              </div>
+                  <input type="hidden" class="hide" name="token" id="token" value=""> 
+          </form>
+      </div>
+    </div>
+</div>
+</div>
+</div>
 </header>
+<div class = "quotes">
+    <h1>Inspirational quotes</h1>
+</div>
 <div class="audio-container-quotes">
     <audio controls>
     <source src="media/quotes.mp3" type="audio/mpeg">
     </audio>
     </div>
-<div class="container">
     <div class="container">
       <div class="row row-content">
           <div class="col-md-8 mx-auto">
@@ -142,6 +142,13 @@
                 <li data-target="#quotesCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#quotesCarousel" data-slide-to="1"></li>
                 <li data-target="#quotesCarousel" data-slide-to="2"></li>
+                <li data-target="#quotesCarousel" data-slide-to="3"></li>
+                <li data-target="#quotesCarousel" data-slide-to="4"></li>
+                <li data-target="#quotesCarousel" data-slide-to="5"></li>
+                <li data-target="#quotesCarousel" data-slide-to="6"></li>
+                <li data-target="#quotesCarousel" data-slide-to="7"></li>
+                <li data-target="#quotesCarousel" data-slide-to="8"></li>
+                <li data-target="#quotesCarousel" data-slide-to="9"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -225,10 +232,10 @@
               <span class="sr-only">Next</span>
             </a>
             <div class="btn-group" id="carouselButton">
-              <button class="btn btn-success btn-sm" id="carouselPause">
+              <button class="btn btn-secondary btn-sm" id="carouselPause">
                   <i class="fa fa-pause"></i>
               </button>
-              <button class="btn btn-success btn-sm" id="carouselPlay">
+              <button class="btn btn-secondary btn-sm" id="carouselPlay">
                   <i class="fa fa-play"></i>
               </button>
           </div>
@@ -236,77 +243,37 @@
       </div>
     </div>
 </div>
-    <div class="container science">
-        <div class="row row-content">
-            <div class="col">
-                <h1 style="text-align: center;">The Science Behind Inspirational Quotes</h1>
-                    <p> </p>
-                    <p> When things get tough, many people turn to a motivational quote for a bit of inspiration. Some of these pithy sayings have become celebrated parts of society’s lexicon. Some include:
-                    </p>
-                    
-                    <p> “I have not failed. I’ve just found 10,000 ways that won’t work.” —Thomas Edison</p>
-                    
-                    <p> “No one can make you feel inferior without your consent.” —Eleanor Roosevelt</p>
-                    
-                    <p> “If you can’t fly then run, if you can’t run then walk, if you can’t walk then crawl, but whatever you do you have to keep moving forward.” —Rev. Martin Luther King, Jr.</p>
-                    
-                    <p> But out of all of the things that people—famous, influential, and otherwise—have to say, what makes some turns of phrase so powerful that they become mantras for generations?
-                        Depending on whom you ask, the appeal appears to lie in a combination of good wordsmithing, motivational psychology, and a measure of self-selection.
-                        Obviously, people who tend to feel inspired by motivational quotes are going to find them more resonant than those who don’t find simple phrases and sayings to be particularly meaningful, says psychologist and motivation expert Jonathan Fader, PhD, founder of the Union Square Practice in New York City.
-                    </p>
-
-                    <p> Phrasing contributes to effectiveness—for better or worse. Farnsworth points to a 2000 study by cognitive scientists at Lafayette College that found that when people were shown two statements of the same pithy saying, study participants were more likely to say the rhyming aphorism seemed true.
-
-                        “As O.J. Simpson’s lawyer once said, ‘If the glove doesn’t fit, you must acquit.’ The study shows that the way an idea is expressed can affect judgments about its merit,” he says. A more upbeat and motivational example is, “Whatever the mind of man can conceive and believe, it can achieve,” by Napoleon Hill.
-                        
-                        Farnsworth says the details of wording make a difference. While there are many ways to say the same thing, one may be more pleasing and convincing than all the others because of the way words are arranged. For example, parallel construction where two halves of a claim are “attractively balanced” can be effective, he adds.
-                        
-                        “An example is the use of parallel construction, so that the two halves of a claim are attractively balanced, such as ‘marry in haste, repent at leisure.’ The reversal of structure, or ‘chiasmus,’ is also attractive—‘ask not what your country can do for you; ask what you can do for your country,’” he says.
-
-                    </p>
-
-                    <p> Humans are aspirational. We want to look up to role models and leaders and follow what they ask. Leaders and their words–inspirational quotes–affect us on a primal level.
-
-                        Words from recognized leaders in business, politics, and the arts may also hold more gravitas because of the assumption that when people are in public positions, they must be accomplished, wise, or otherwise exceptional to have achieved those positions. Those perceptions can make messages from such leaders more powerful.
-                        
-                        For people open to their message, well-structured messages that use strong imagery and appeal to our aspirational nature can be meaningful and powerful in changing our thinking and helping us see something in ourselves that we want to change or overcome, Fader says. That’s one of the main reasons they’re passed on for generations.
-
-                    </p>
-            </div>
-        </div>
-    </div>
-</div>
 
 <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="commonAi col-3 col-sm-3">
-            <h5 style="color: black;">Terms & Policies</h5>
-            <ul class="list-unstyled">
-                <li><a href="terms.html"> Terms & Conditions</a></li>
-                <li><a href="terms.html #privacy"> Privacy</a></li>
-                <li><a href="terms.html #anti-spam"> Anti-Spam</a></li>
-                <li><a href="terms.html #health-disclaimer"> Health Disclaimer</a></li>               
-            </ul>
-          </div>
-        <div class="socialMediaLinks col-4 col-sm-5 text-center">
-          <h5>Social</h5>
-          <a href="https://twitter.com" class="fa fa-twitter"></a>
-          <a href="https://facebook.com" class="fa fa-facebook"></a>
-          <a href="https://pinterest.com" class="fa fa-pinterest"></a>
-          <a href="https://instagram.com" class="fa fa-instagram"></a>
-          <a href="https://youtube.com" class="fa fa-youtube"></a>
-        </div>
-        <div class="col-3 text-center">
-            <h6 style="color: black;">Contact Us</h6>
-          <a role="button" class="btn btn-light" href="tel:+13063693639"><i class="fa fa-phone fa-sm"></i>
-            1-306-369-3639</a><br />
-          <a role="button" class="btn btn-light" href="mailto:artofinspiration@ai.com"><i class="fa fa-envelope fa-sm"></i>
-            artofinspiration@ai.com</a>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="commonAi col">
+        <h5 style="color: #ffff;">Terms & Policies</h5>
+        <ul class="list-unstyled">
+          <li><a href="terms.html"> Terms & Conditions</a></li>
+          <li><a href="terms.html #privacy"> Privacy</a></li>
+          <li><a href="terms.html #anti-spam"> Anti-Spam</a></li>
+          <li><a href="terms.html #health-disclaimer"> Health Disclaimer</a></li>               
+        </ul>
+      </div>
+      <div class="socialMediaLinks col">
+        <h5 style="color: #ffff;">Social</h5>
+        <a href="https://twitter.com" class="fa fa-twitter"></a>
+        <a href="https://facebook.com" class="fa fa-facebook"></a>
+        <a href="https://pinterest.com" class="fa fa-pinterest"></a>
+        <a href="https://instagram.com" class="fa fa-instagram"></a>
+        <a href="https://youtube.com" class="fa fa-youtube"></a>
+      </div>
+      <div class="col">
+          <h5 style="color: #ffff;">Contact Us</h5>
+        <a role="button" class="btn" style="color: #ffff;" href="tel:+13063693639"><i class="fa fa-phone fa-sm"></i>
+          1-306-369-3639</a><br />
+        <a role="button" class="btn" style="color: #ffff;" href="mailto:artofinspiration@ai.com"><i class="fa fa-envelope fa-sm"></i>
+          artofinspiration@ai.com</a>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

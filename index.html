@@ -13,180 +13,239 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light sticky-top bg-light">
-            <a class="navbar-brand" href="index.html">Art of Inspiration</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"><b>Home</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"><b>About</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quotes.html"><b>Quotes</b></a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
-                      Common AI Focal Points</b>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" role="button" href="happiness.html">Happiness</a>
-                      <a class="dropdown-item" role="button" href="health.html">Health</a>
-                      <a class="dropdown-item" role="button" href="success.html">Success</a>
-                      <a class="dropdown-item" role="button" href="love.html">Love</a>
-                      <a class="dropdown-item" role="button" href="money.html">Money</a>
-                    </div>
-                  </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
-                    Members</b>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand" href="index.html">Art of Inspiration</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aiNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="aiNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="quotes.html">
+                  Quotes</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Focal Points
+                </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" role="button" href="happiness.html">Happiness</a>
+                    <a class="dropdown-item" role="button" href="health.html">Health</a>
+                    <a class="dropdown-item" role="button" href="success.html">Success</a>
+                    <a class="dropdown-item" role="button" href="love.html">Love</a>
+                    <a class="dropdown-item" role="button" href="money.html">Money</a>
+              </div>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Members
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" role="button" data-toggle="modal" data-target="#loginModal" href="#">Login</a>
-                    <a class="dropdown-item" role="button" data-toggle="modal" data-target="#forgotModal" href="#">Forgot Password?</a>
-                    <div class="dropdown-divider"></div>
+                  <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="contactus.html">Contact Us</a>
                   </div>
                 </li>
-            </ul>       
-                <form class="form-inline">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-        </nav>
-            <div id="loginModal" class="modal fade" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title">Login</h3>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-12">
-                                <label class="sr-only" for="loginEmail">Email address</label>
-                                <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                            </div>
-                            <div class="form-group col-12">
-                                <label class="sr-only" for="loginPassword">Password</label>
-                                <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                            </div>
-                            <div class="col">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label"> Remember me</label>
-                                </div>
-                            </div>
+              </ul>       
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+              </form>
+          </div>
+      </nav>
+      <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <label class="sr-only" for="loginEmail">Email address</label>
+                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                    </div>
+                    <div class="form-group col-12">
+                        <label class="sr-only" for="loginPassword">Password</label>
+                        <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label"> Remember me</label>
                         </div>
-                        <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            <a class="nav-item" role="button" data-toggle="modal" href="#" data-target="#forgotModal">
+                              <button type="button" class="btn btn-link btn-sm" style="margin-top: 15px;">Forgot Password ?</button>
+                            </a> 
                         </div>
-                    </form>
+                    </div>
+                <div class="form-row">
+                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </div>
-<div id="forgotModal" class="modal fade" role="dialog">
+</div>
+</div>  
+  <div id="forgotModal" class="modal fade" role="dialog">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-md-12 al">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h2 style="text-align: center;"><i class="fa fa-lock fa-4x"></i></h2>
-                <h3 class="modal-title" style="text-align: center;">Forgot Password?</h3>
-                <p style="text-align: center;">You can reset your password here.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal-body">
-                <div class="container-fluid">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-12">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
-                                <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
-                        </div>
-                            <input type="hidden" class="hide" name="token" id="token" value=""> 
-                    </form>
-                </div>
+      <div class="modal-content">
+          <div class="modal-header">
+              <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-md-12 al">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h2 style="text-align: center;"><i class="fa fa-lock fa-4x"></i></h2>
+                      <h3 class="modal-title" style="text-align: center;">Forgot Password?</h3>
+                      <p style="text-align: center;">You can reset your password here.</p>
               </div>
           </div>
       </div>
+</div>
+<div class="modal-body">
+        <div class="container-fluid">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                        <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
+                </div>
+                    <input type="hidden" class="hide" name="token" id="token" value=""> 
+            </form>
+        </div>
+      </div>
   </div>
-    <h2 class="introduction">Welcome to your daily dose of inspiration<p class="description">Artists are funny creatures and many of us struggle with creativity. Working out what we want to do, how to stand apart from others. What is really needed is to find your muse, or in other words, finding inspiration.It is a rare artist that doesn’t need inspiration to work. For the rest of us, we need help and we need to find what will inspire us to create our work.</p></h2>
+</div>
+</div>
 </header>
+<div class="introduction">
+  <h1>Welcome to your daily dose of inspiration </h1>
+  <h5>"Be the change that you wish to see in the world." - Mahatma Gandhi</h5>
+</div>    
 <div class="audio-container">
   <audio controls>
   <source src="media/home.mp3" type="audio/mpeg">
   </audio>
   </div>
-<div class="container">
-<div class="row row-content inspiration">
-    <div class="col-sm-8 order-sm-first col-md-6">
-      <h3 class="text-sm-left"><b>What is inspiration?</b></h3>
-      <p class="d-none d-sm-block">Inspiration has an unusual history in that its figurative sense appears to predate its literal one. It comes from the Latin inspiratus (the past participle of inspirare, “to breathe into, inspire”) and in English has had the meaning “the drawing of air into the lungs” since the middle of the 16th century. This breathing sense is still in common use among doctors, as is expiration (“the act or process of releasing air from the lungs”). However, before inspiration was used to refer to breath it had a distinctly theological meaning in English, referring to a divine influence upon a person, from a divine entity; this sense dates back to the early 14th century. The sense of inspiration often found today is considerably newer than either of these two senses, dating from the 19th century.</p>
-    </div>
-    <div class="col-sm-4 order-sm-last col-md-6">
-      <div class="media">
-        <img class="d-flex mr-3 img-thumbnail" src="img/inspiration.jpg" alt="inspiration" />
+  <div class="container">
+  <div class="row row-content">
+    <div class="col">
+      <div id="accordion">
+        <div class="card">
+            <div role="tab" class="card-header">
+              <h4>
+                  <a data-toggle="collapse" data-target="#bootstrap">
+                    What is inspiration?
+                  </a>
+                </h4>
+                <div class="collapse" id="bootstrap" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="col">
+                        <p style="text-indent: 40px;">Inspiration has an unusual history in that its figurative sense appears to predate its literal one. It comes from the Latin inspiratus (the past participle of inspirare, “to breathe into, inspire”) and in English has had the meaning “the drawing of air into the lungs” since the middle of the 16th century.
+                        </p>   
+                        <p style="text-indent: 40px;"> This breathing sense is still in common use among doctors, as is expiration (“the act or process of releasing air from the lungs”). However, before inspiration was used to refer to breath it had a distinctly theological meaning in English, referring to a divine influence upon a person, from a divine entity; this sense dates back to the early 14th century.
+                          The sense of inspiration often found today is considerably newer than either of these two senses, dating from the 19th century.
+                        </p> 
+                        <p style="text-indent: 40px;"> Commonly we think of people being randomly struck by a flash of inspiration, so we see inspiration as a feeling that occurs almost by accident. However, as the start of that dictionary definition states, inspiration is a process. We become mentally stimulated (inspired) to do something. For those who want to feel inspired, the key is to learn how to create an inspired state when we need to.
+                        </p>
+                        </div>
+                        <div class="col">
+                        <img class="d-flex mr-3 img-thumbnail" src="img/inspiration.jpg" alt="inspiration" />
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="card">
+            <div role="tab" class="card-header">
+                <h4>
+                    <a class="collapsed" data-toggle="collapse" data-target="#git"> 
+                        How to get inspired
+                    </a>
+                </h4>
+                <div class="collapse" id="git" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="col-lg-9">
+                        <p style="text-indent: 40px;"> Inspiration cannot be forced. Anyone who says otherwise hasn’t spent hours laboring over the same piece of work with nothing but a blank mind full of frustration.The sooner you accept this, the easier it will be to capture that lightning in a bottle and get inspired once more.
+                        </p>  
+                        <p style="text-indent: 40px;"> I’m no psychologist but I seem to produce my best ideas and work at the most unexpected times. The harder I try to force myself to generate ideas, the harder it is and the worse the final results tend to be.So accept it.
+                        </p>  
+                        <p style="text-indent: 40px;"> Take a deep breath in, blow out your frustration, and start on something else. If possible either take a break or work on something less creative to let your mind recuperate and process the information you’ve given it.
+                        </p>
+                      </div>
+                      <div class="col">
+                        <img class="d-flex mr-3 img-thumbnail" src="img/dreams.jpg" alt="dreams" />
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div role="tab" class="card-header">
+                <h4>
+                    <a class="collapsed" data-toggle="collapse" data-target="#mongo">   
+                      Find what inspires you
+                    </a>  
+                </h4>
+                <div class="collapse" id="mongo" data-parent="#accordion">
+                    <div class="card-body">
+                       <div class="col"> 
+                        <p style="text-indent: 40px;"> How do we overcome these foreboding feelings and instead shift our focus to the things that move us? Let’s start with what doesn’t inspire you.
+                        </p>
+                        <p style="text-indent: 40px;"> If, like me, your focus wanes midday and you find yourself doom scrolling through Twitter, only to feel even less motivated to work, maybe don’t do that. Easier said than done, I know.Start by making a list of the things you spend your time doing during an average day. How do you feel before you do each thing? How do you feel afterward? Increase time spent on things that leave you feeling energized, excited, and creative and set aside dedicated space for them in your schedule.
+                        </p>  
+                        <p style="text-indent: 40px;"> How do you limit those things that do the opposite? Run the same exercise with the people you interact with. Now, prioritize time with friends who bring value to your conversations.
+                        </p>
+                       </div>
+                       <div class="col">
+                          <img class="d-flex mr-3 img-thumbnail" src="img/sunrise.jpg" alt="sunrise" />
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div role="tab" class="card-header">
+                <h4>
+                    <a class="collapsed" data-toggle="collapse" data-target="#node">  
+                      Turn inspiration into action
+                    </a>
+                </h4>
+                <div class="collapse" id="node" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="col">  
+                        <p style="text-indent: 40px;">Having inspirational notes is only the first step after inspiration, and it is not enough to turn your inspiration into action. For example, if you find something inspirational in the book, you highlight the quote and write a note about the inspirational quote.
+                        </p>  
+                        <p style="text-indent: 40px;"> Sometimes, you can add some additional explanations or descriptions of the quote inside your inspirational notebook. Now, you have a book with different inspirational quotes, and you can bring the sparkle of inspiration again, and if you don’t take a real action step, you will not transform it into action.
+                        </p>  
+                        <p style="text-indent: 40px;"> So, after you write your notes, start with the planning stage. When you are at this stage, don’t over-plan what you need to do. It is enough to write three to five most important steps you need to take.
+                        </p>
+                      </div>
+                      <div class="col">
+                        <img class="d-flex mr-3 img-thumbnail" src="img/lion.jpg" alt="lion" />
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row row-content inspiration">
-    <div class="col-sm-6">
-        <div class="media">
-            <img class="d-flex mr-3 img-thumbnail" src="img/dreams.jpg" alt="dreams" />
-        </div>
-        </div>
-            <div class="col-sm-8 order-sm-last col-md-6">
-              <h4 class="order-sm-last"><b>How to get inspired</b></h4>
-              <p class="d-none d-sm-block">Inspiration cannot be forced. Anyone who says otherwise hasn’t spent hours laboring over the same piece of work with nothing but a blank mind full of frustration.The sooner you accept this, the easier it will be to capture that lightning in a bottle and get inspired once more.I’m no psychologist but I seem to produce my best ideas and work at the most unexpected times. The harder I try to force myself to generate ideas, the harder it is and the worse the final results tend to be.So accept it.Take a deep breath in, blow out your frustration, and start on something else. If possible either take a break or work on something less creative to let your mind recuperate and process the information you’ve given it.</p>
-            </div>
     </div>
-    <div class="row row-content inspiration">
-        <div class="col-sm-8 oder-sm-first col-md-6">
-          <h5 class="text-sm-left"><b>Find what inspires you</b></h5>
-          <p class="d-none d-sm-block">How do we overcome these foreboding feelings and instead shift our focus to the things that move us? Let’s start with what doesn’t inspire you. If, like me, your focus wanes midday and you find yourself doom scrolling through Twitter, only to feel even less motivated to work, maybe don’t do that. Easier said than done, I know.Start by making a list of the things you spend your time doing during an average day. How do you feel before you do each thing? How do you feel afterward? Increase time spent on things that leave you feeling energized, excited, and creative and set aside dedicated space for them in your schedule. How do you limit those things that do the opposite? Run the same exercise with the people you interact with. Now, prioritize time with friends who bring value to your conversations.</p>
-          </div>
-            <div class="col-sm-4 order-sm-last col-md-6">
-              <div class="media">
-                <img class="d-flex mr-3 img-thumbnail" src="img/sunrise.jpg" alt="sunrise" />
-              </div>
-            </div>
-        </div>
-    <div class="row row-content inspiration">
-        <div class="col-sm-6">
-          <div class="media">
-                <img class="d-flex mr-3 img-thumbnail" src="img/lion.jpg" alt="lion" />
-          </div>
-        </div>
-        <div class="col-sm-8 order-sm-last col-md-6">
-                <h4 class="order-sm-last"><b>Turn inspiration into action</b></h4>
-                    <p class="d-none d-sm-block">Having inspirational notes is only the first step after inspiration, and it is not enough to turn your inspiration into action. For example, if you find something inspirational in the book, you highlight the quote and write a note about the inspirational quote. Sometimes, you can add some additional explanations or descriptions of the quote inside your inspirational notebook. Now, you have a book with different inspirational quotes, and you can bring the sparkle of inspiration again, and if you don’t take a real action step, you will not transform it into action.So, after you write your notes, start with the planning stage. When you are at this stage, don’t over-plan what you need to do. It is enough to write three to five most important steps you need to take.</p>
-        </div>
     </div>
-</div>
     <footer class="site-footer">
         <div class="container">
           <div class="row">
-            <div class="commonAi col-3 col-sm-3">
-              <h5 style="color: black;">Terms & Policies</h5>
+            <div class="commonAi col">
+              <h5 style="color: #ffff;">Terms & Policies</h5>
               <ul class="list-unstyled">
                 <li><a href="terms.html"> Terms & Conditions</a></li>
                 <li><a href="terms.html #privacy"> Privacy</a></li>
@@ -194,19 +253,19 @@
                 <li><a href="terms.html #health-disclaimer"> Health Disclaimer</a></li>               
               </ul>
             </div>
-            <div class="socialMediaLinks col-4 col-sm-5 text-center">
-              <h5>Social</h5>
+            <div class="socialMediaLinks col">
+              <h5 style="color: #ffff;">Social</h5>
               <a href="https://twitter.com" class="fa fa-twitter"></a>
               <a href="https://facebook.com" class="fa fa-facebook"></a>
               <a href="https://pinterest.com" class="fa fa-pinterest"></a>
               <a href="https://instagram.com" class="fa fa-instagram"></a>
               <a href="https://youtube.com" class="fa fa-youtube"></a>
             </div>
-            <div class="col-3 text-center">
-                <h6 style="color: black;">Contact Us</h6>
-              <a role="button" class="btn btn-light" href="tel:+13063693639"><i class="fa fa-phone fa-sm"></i>
+            <div class="col">
+                <h5 style="color: #ffff;">Contact Us</h5>
+              <a role="button" class="btn" style="color: #ffff;" href="tel:+13063693639"><i class="fa fa-phone fa-sm"></i>
                 1-306-369-3639</a><br />
-              <a role="button" class="btn btn-light" href="mailto:artofinspiration@ai.com"><i class="fa fa-envelope fa-sm"></i>
+              <a role="button" class="btn" style="color: #ffff;" href="mailto:artofinspiration@ai.com"><i class="fa fa-envelope fa-sm"></i>
                 artofinspiration@ai.com</a>
             </div>
           </div>

@@ -16,244 +16,269 @@
     <title>Art of Inspiration</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light sticky-top bg-light">
-            <a class="navbar-brand" href="index.html">Art of Inspiration</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"><b>Home</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"><b>About</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quotes.html"><b>Quotes</b></a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
-                      Common AI Focal Points</b>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" role="button" href="happiness.html">Happiness</a>
-                        <a class="dropdown-item" role="button" href="health.html">Health</a>
-                        <a class="dropdown-item" role="button" href="success.html">Success</a>
-                        <a class="dropdown-item" role="button" href="love.html">Love</a>
-                        <a class="dropdown-item" role="button" href="money.html">Money</a>
-                    </div>
-                  </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
-                    Members</b>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" role="button" data-toggle="modal" data-target="#loginModal" href="#">Login</a>
-                    <a class="dropdown-item" role="button" data-toggle="modal" data-target="#forgotModal" href="#">Forgot Password?</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="contactus.html">Contact Us</a>
-                  </div>
-                </li>
-            </ul>       
-                <form class="form-inline">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-        </nav>
-            <div id="loginModal" class="modal fade" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title">Login</h3>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <a class="navbar-brand" href="index.html">Art of Inspiration</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aiNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="aiNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="quotes.html">
+                Quotes</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Focal Points
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" role="button" href="happiness.html">Happiness</a>
+                  <a class="dropdown-item" role="button" href="health.html">Health</a>
+                  <a class="dropdown-item" role="button" href="success.html">Success</a>
+                  <a class="dropdown-item" role="button" href="love.html">Love</a>
+                  <a class="dropdown-item" role="button" href="money.html">Money</a>
             </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-12">
-                                <label class="sr-only" for="loginEmail">Email address</label>
-                                <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                            </div>
-                            <div class="form-group col-12">
-                                <label class="sr-only" for="loginPassword">Password</label>
-                                <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                            </div>
-                            <div class="col">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label"> Remember me</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                        </div>
-                    </form>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Members
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" role="button" data-toggle="modal" data-target="#loginModal" href="#">Login</a>
+                <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="contactus.html">Contact Us</a>
                 </div>
+              </li>
+            </ul>       
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title">Login</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+  </div>
+  <div class="modal-body">
+      <div class="container-fluid">
+          <form>
+              <div class="form-row">
+                  <div class="form-group col-12">
+                      <label class="sr-only" for="loginEmail">Email address</label>
+                      <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                  </div>
+                  <div class="form-group col-12">
+                      <label class="sr-only" for="loginPassword">Password</label>
+                      <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                  </div>
+                  <div class="col">
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label"> Remember me</label>
+                      </div>
+                          <a class="nav-item" role="button" data-toggle="modal" href="#" data-target="#forgotModal">
+                            <button type="button" class="btn btn-link btn-sm" style="margin-top: 15px;">Forgot Password ?</button>
+                          </a> 
+                      </div>
+                  </div>
+              <div class="form-row">
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+</div>
+</div>  
+<div id="forgotModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-12 al">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 style="text-align: center;"><i class="fa fa-lock fa-4x"></i></h2>
+                    <h3 class="modal-title" style="text-align: center;">Forgot Password?</h3>
+                    <p style="text-align: center;">You can reset your password here.</p>
             </div>
         </div>
     </div>
 </div>
-<div id="forgotModal" class="modal fade" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-md-12 al">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h2 style="text-align: center;"><i class="fa fa-lock fa-4x"></i></h2>
-                <h3 class="modal-title" style="text-align: center;">Forgot Password?</h3>
-                <p style="text-align: center;">You can reset your password here.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal-body">
-                <div class="container-fluid">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-12">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
-                                <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
-                        </div>
-                            <input type="hidden" class="hide" name="token" id="token" value=""> 
-                    </form>
-                </div>
+<div class="modal-body">
+      <div class="container-fluid">
+          <form>
+              <div class="form-row">
+                  <div class="form-group col-12">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                      <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
+                  </div>
               </div>
-          </div>
+              <div class="form-row">
+                  <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
+              </div>
+                  <input type="hidden" class="hide" name="token" id="token" value=""> 
+          </form>
       </div>
-  </div>
-  </header>
-  <div class="container">
-    <div class="row-content">
-        <div class="col">
-          <img id="money" src="https://www.creativefabrica.com/wp-content/uploads/2019/03/Money-icon-by-ahlangraphic-90-580x386.jpg">
-          <script>
-              money.onclick = function() {
-              let start = Date.now();
-
-              let timer = setInterval(function() {
-                  let timePassed = Date.now() - start;
-
-                  money.style.left = timePassed / 5 + 'px';
-
-                  if (timePassed > 2000) clearInterval(timer);
-
-              }, 20);
-              }
-          </script>
-        </div>
-  </div>
-  <div class="row-content" style="padding-top: 20px;">
-      <div class="col">
+    </div>
+</div>
+</div>
+</div>
+</header>
+    <div class="moneyy">
+      <h1>Money honey</h1>
+    </div>
+  
+      <div class="audio-container-about">
           <audio controls>
-          <source src="media/money.mp3" type="audio/mpeg">
+            <source src="media/money.mp3" type="audio/mpeg">
           </audio>
       </div>
-  </div>
-</div>
-  <div class="container">
-    <div class="row row-content money">
-        <div class="col-sm-8 order-sm-first col-md-6">
-          <h3 class="text-sm-left"><b>What is Money?</b></h3>
-          <p class="d-none d-sm-block">Money is any item or verifiable record that is generally accepted as payment for goods and services and repayment of debts, such as taxes, in a particular country or socio-economic context. The main functions of money are distinguished as: a medium of exchange, a unit of account, a store of value and sometimes, a standard of deferred payment.Any item or verifiable record that fulfils these functions can be considered as money.
 
-            Money is historically an emergent market phenomenon establishing a commodity money, but nearly all contemporary money systems are based on fiat money. Fiat money, like any check or note of debt, is without use value as a physical commodity. It derives its value by being declared by a government to be legal tender; that is, it must be accepted as a form of payment within the boundaries of the country, for all debts, public and private. Counterfeit money can cause good money to lose its value.
-            
-            The money supply of a country consists of currency (banknotes and coins) and, depending on the particular definition used, one or more types of bank money (the balances held in checking accounts, savings accounts, and other types of bank accounts). Bank money, which consists only of records (mostly computerized in modern banking), forms by far the largest part of broad money in developed countries.</p>
-        </div>
-        <div class="col-sm-4 order-sm-last col-md-6">
-          <div class="media">
-            <img class="d-flex mr-3 img-thumbnail" src="img/money.jpg" alt="money" />
+      <div class="container">
+        <div class="row row-content">
+          <div class="col">
+            <div id="accordion">
+              <div class="card">
+                  <div role="tab" class="card-header">
+                    <h4>
+                        <a data-toggle="collapse" data-target="#bootstrap">
+                          What is money?
+                        </a>
+                      </h4>
+                      <div class="collapse" id="bootstrap" data-parent="#accordion">
+                          <div class="card-body">
+                              <div class="col">
+                              <p style="text-indent: 40px;">Money is any item or verifiable record that is generally accepted as payment for goods and services and repayment of debts, such as taxes, in a particular country or socio-economic context. The main functions of money are distinguished as: a medium of exchange, a unit of account, a store of value and sometimes, a standard of deferred payment.Any item or verifiable record that fulfils these functions can be considered as money.
+                              </p>   
+                              <p style="text-indent: 40px;"> Money is historically an emergent market phenomenon establishing a commodity money, but nearly all contemporary money systems are based on fiat money. Fiat money, like any check or note of debt, is without use value as a physical commodity. It derives its value by being declared by a government to be legal tender; that is, it must be accepted as a form of payment within the boundaries of the country, for all debts, public and private. Counterfeit money can cause good money to lose its value.
+                              </p> 
+                              <p style="text-indent: 40px;"> The money supply of a country consists of currency (banknotes and coins) and, depending on the particular definition used, one or more types of bank money (the balances held in checking accounts, savings accounts, and other types of bank accounts). Bank money, which consists only of records (mostly computerized in modern banking), forms by far the largest part of broad money in developed countries.  
+                              </p>
+                              </div>
+                              <div class="col">
+                                <img class="d-flex mr-3 img-thumbnail" src="img/money.jpg" alt="money" />
+                              </div>
+                          </div>
+                      </div>  
+                  </div>
+              </div>
+              <div class="card">
+                  <div role="tab" class="card-header">
+                      <h4>
+                          <a class="collapsed" data-toggle="collapse" data-target="#git"> 
+                            Money in economics
+                          </a>
+                      </h4>
+                      <div class="collapse" id="git" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="col">
+                              <p style="text-indent: 40px;"> Money is often defined in terms of the three functions or services that it provides. Money serves as a medium of exchange, as a store of value, and as a unit of account.
+                              </p>  
+                              <p style="text-indent: 40px;">  Medium of exchange. Money's most important function is as a medium of exchange to facilitate transactions. Without money, all transactions would have to be conducted by barter, which involves direct exchange of one good or service for another. The difficulty with a barter system is that in order to obtain a particular good or service from a supplier, one has to possess a good or service of equal value, which the supplier also desires. In other words, in a barter system, exchange can take place only if there is a double coincidence of wants between two transacting parties. 
+                                The likelihood of a double coincidence of wants, however, is small and makes the exchange of goods and services rather difficult. 
+                              </p>  
+                              <p style="text-indent: 40px;"> Money effectively eliminates the double coincidence of wants problem by serving as a medium of exchange that is accepted in all transactions, by all parties, regardless of whether they desire each others' goods and services.
+                                Furthermore, money is an easily transported store of value that is available in a number of convenient denominations.
+                              </p>
+                            </div>
+                            <div class="col">
+                              <img class="d-flex mr-3 img-thumbnail" src="img/economics.jpg" alt="economics" />
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div role="tab" class="card-header">
+                      <h4>
+                          <a class="collapsed" data-toggle="collapse" data-target="#mongo">   
+                            Can money buy happiness?
+                          </a>  
+                      </h4>
+                      <div class="collapse" id="mongo" data-parent="#accordion">
+                          <div class="card-body">
+                             <div class="col"> 
+                              <p style="text-indent: 40px;"> Money allows us to meet our basic needs to buy food and shelter and pay for healthcare. Meeting these needs is essential, and if we don’t have enough money to do so the well-being of the community as a whole suffers greatly.  We all have a responsibility to work towards a society where everyone has access to adequate food, shelter, and healthcare. Where we are all safe. 
+                             </p>
+                              <p style="text-indent: 40px;"> Having enough money also provides a sense of security, one that is often missing when people worry about unforeseen medical expenses or losing their job. A 2017 study found that 50% of Americans worry about their financial situation, and it impacts their mental health, relationships, diet, even their work performance.  There is no denying that having enough money to cover expenses and put some aside is important for our well-being.
+                              </p>  
+                              <p style="text-indent: 40px;"> While having enough money to meet basic needs and provide a safety net is essential to wellbeing, there are indications that additional income may not significantly increase our well-being and may even have a negative effect in some cases.
+                              </p>
+                             </div>
+                             <div class="col">
+                              <img class="d-flex mr-3 img-thumbnail" src="img/happymoney.jpg" alt="happymoney" />
+                             </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div role="tab" class="card-header">
+                      <h4>
+                          <a class="collapsed" data-toggle="collapse" data-target="#node">  
+                            Money and purpose
+                          </a>
+                      </h4>
+                      <div class="collapse" id="node" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="col">  
+                              <p style="text-indent: 40px;"> When you were a kid, were you told by your parents, teachers, peers, or religious leaders what you should do in life? It may be to earn a lot of money, to be successful, to be respectable, to be a filial child, to contribute to society, or to serve a higher entity.
+                              </p>  
+                              <p style="text-indent: 40px;"> Whatever it is, what role did you play in identifying it? Did you have a say in determining this goal? Did you brainstorm and think about all the things you want to do or who you want to be, before deciding on what you want to do?                                
+                                The likelihood is that somehow, somewhere, people decided how you should lead your life on your behalf without including you in the decision-making process. What seemed like a choice was no more than a series of suggestions and conditioned messages that you received since young, creating the impression that your life choices were your choices, when they were really just instructions that you were asked to follow, or at best — a small subset of “choices” you were made to pick from.
+                              </p>  
+                              <p style="text-indent: 40px;">These are false or imposed purposes — purposes imposed on you by others. False purposes are not your true purposes. They have been glossed over and packaged as unquestionable truths. Because of the way they are subtly pressed into our lives, and because of all the structures that seem to support these beliefs — from media reports to religious structures to school textbooks — few people challenge these beliefs. To them, this is the gospel truth. To them, this is the way of life.      
+                              </p>
+                            </div>
+                            <div class="col">
+                              <img class="d-flex mr-3 img-thumbnail" src="img/moneypurpose.jpg" alt="moneypurpose" />
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row row-content economics">
-        <div class="col-sm-6">
-            <div class="media">
-                <img class="d-flex mr-3 img-thumbnail" src="img/economics.jpg" alt="economics" />
-            </div>
-            </div>
-                <div class="col-sm-8 order-sm-last col-md-6">
-                  <h4 class="order-sm-last"><b>Money in Economics</b></h4>
-                  <p class="d-none d-sm-block">Money is often defined in terms of the three functions or services that it provides. Money serves as a medium of exchange, as a store of value, and as a unit of account.
-                    Medium of exchange. Money's most important function is as a medium of exchange to facilitate transactions. Without money, all transactions would have to be conducted by barter, which involves direct exchange of one good or service for another. The difficulty with a barter system is that in order to obtain a particular good or service from a supplier, one has to possess a good or service of equal value, which the supplier also desires. In other words, in a barter system, exchange can take place only if there is a double coincidence of wants between two transacting parties. The likelihood of a double coincidence of wants, however, is small and makes the exchange of goods and services rather difficult. Money effectively eliminates the double coincidence of wants problem by serving as a medium of exchange that is accepted in all transactions, by all parties, regardless of whether they desire each others' goods and services.
-                    Furthermore, money is an easily transported store of value that is available in a number of convenient denominations.
-                  </p>
-                </div>
-        </div>
-        <div class="row row-content happymoney">
-            <div class="col-sm-8 oder-sm-first col-md-6">
-              <h5 class="text-sm-left"><b>Can money buy happiness?</b></h5>
-              <p class="d-none d-sm-block">Money allows us to meet our basic needs to buy food and shelter and pay for healthcare. Meeting these needs is essential, and if we don’t have enough money to do so the well-being of the community as a whole suffers greatly.  We all have a responsibility to work towards a society where everyone has access to adequate food, shelter, and healthcare. Where we are all safe. 
-                Having enough money also provides a sense of security, one that is often missing when people worry about unforeseen medical expenses or losing their job. A 2017 study found that 50% of Americans worry about their financial situation, and it impacts their mental health, relationships, diet, even their work performance.  There is no denying that having enough money to cover expenses and put some aside is important for our well-being.
-                While having enough money to meet basic needs and provide a safety net is essential to wellbeing, there are indications that additional income may not significantly increase our well-being and may even have a negative effect in some cases.
-              </p>
-              </div>
-                <div class="col-sm-4 order-sm-last col-md-6">
-                  <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/happymoney.jpg" alt="happymoney" />
-                  </div>
-                </div>
-            </div>
-        <div class="row row-content moneypurpose">
-            <div class="col-sm-6">
-              <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/moneypurpose.jpg" alt="moneypurpose" />
-              </div>
-            </div>
-            <div class="col-sm-8 order-sm-last col-md-6">
-                    <h4 class="order-sm-last"><b>Money and Purpose</b></h4>
-                        <p class="d-none d-sm-block">When you were a kid, were you told by your parents, teachers, peers, or religious leaders what you should do in life? It may be to earn a lot of money, to be successful, to be respectable, to be a filial child, to contribute to society, or to serve a higher entity.
 
-                          Whatever it is, what role did you play in identifying it? Did you have a say in determining this goal? Did you brainstorm and think about all the things you want to do or who you want to be, before deciding on what you want to do?
-                          
-                          The likelihood is that somehow, somewhere, people decided how you should lead your life on your behalf without including you in the decision-making process. What seemed like a choice was no more than a series of suggestions and conditioned messages that you received since young, creating the impression that your life choices were your choices, when they were really just instructions that you were asked to follow, or at best — a small subset of “choices” you were made to pick from.
-                          These are false or imposed purposes — purposes imposed on you by others. False purposes are not your true purposes. They have been glossed over and packaged as unquestionable truths. Because of the way they are subtly pressed into our lives, and because of all the structures that seem to support these beliefs — from media reports to religious structures to school textbooks — few people challenge these beliefs. To them, this is the gospel truth. To them, this is the way of life.
-                        </p>
-            </div>
-        </div>
-    </div>
     <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="commonAi col-3 col-sm-3">
-              <h5 style="color: black;">Terms & Policies</h5>
-              <ul class="list-unstyled">
-                <li><a href="terms.html"> Terms & Conditions</a></li>
-                <li><a href="terms.html #privacy"> Privacy</a></li>
-                <li><a href="terms.html #anti-spam"> Anti-Spam</a></li>
-                <li><a href="terms.html #health-disclaimer"> Health Disclaimer</a></li>               
-              </ul>
-            </div>
-            <div class="socialMediaLinks col-4 col-sm-5 text-center">
-              <h5>Social</h5>
-              <a href="https://twitter.com" class="fa fa-twitter"></a>
-              <a href="https://facebook.com" class="fa fa-facebook"></a>
-              <a href="https://pinterest.com" class="fa fa-pinterest"></a>
-              <a href="https://instagram.com" class="fa fa-instagram"></a>
-              <a href="https://youtube.com" class="fa fa-youtube"></a>
-            </div>
-            <div class="col-3 text-center">
-                <h6 style="color: black;">Contact Us</h6>
-              <a role="button" class="btn btn-light" href="tel:+13063693639"><i class="fa fa-phone fa-sm"></i>
-                1-306-369-3639</a><br />
-              <a role="button" class="btn btn-light" href="mailto:artofinspiration@ai.com"><i class="fa fa-envelope fa-sm"></i>
-                artofinspiration@ai.com</a>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="commonAi col">
+            <h5 style="color: #ffff;">Terms & Policies</h5>
+            <ul class="list-unstyled">
+              <li><a href="terms.html"> Terms & Conditions</a></li>
+              <li><a href="terms.html #privacy"> Privacy</a></li>
+              <li><a href="terms.html #anti-spam"> Anti-Spam</a></li>
+              <li><a href="terms.html #health-disclaimer"> Health Disclaimer</a></li>               
+            </ul>
+          </div>
+          <div class="socialMediaLinks col">
+            <h5 style="color: #ffff;">Social</h5>
+            <a href="https://twitter.com" class="fa fa-twitter"></a>
+            <a href="https://facebook.com" class="fa fa-facebook"></a>
+            <a href="https://pinterest.com" class="fa fa-pinterest"></a>
+            <a href="https://instagram.com" class="fa fa-instagram"></a>
+            <a href="https://youtube.com" class="fa fa-youtube"></a>
+          </div>
+          <div class="col">
+              <h5 style="color: #ffff;">Contact Us</h5>
+            <a role="button" class="btn" style="color: #ffff;" href="tel:+13063693639"><i class="fa fa-phone fa-sm"></i>
+              1-306-369-3639</a><br />
+            <a role="button" class="btn" style="color: #ffff;" href="mailto:artofinspiration@ai.com"><i class="fa fa-envelope fa-sm"></i>
+              artofinspiration@ai.com</a>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

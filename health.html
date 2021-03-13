@@ -16,228 +16,269 @@
     <title>Art of Inspiration</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light sticky-top bg-light">
-            <a class="navbar-brand" href="index.html">Art of Inspiration</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"><b>Home</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"><b>About</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quotes.html"><b>Quotes</b></a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
-                      Common AI Focal Points</b>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" role="button" href="happiness.html">Happiness</a>
-                        <a class="dropdown-item" role="button" href="health.html">Health</a>
-                        <a class="dropdown-item" role="button" href="success.html">Success</a>
-                        <a class="dropdown-item" role="button" href="love.html">Love</a>
-                        <a class="dropdown-item" role="button" href="money.html">Money</a>
-                    </div>
-                  </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
-                    Members</b>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" role="button" data-toggle="modal" data-target="#loginModal" href="#">Login</a>
-                    <a class="dropdown-item" role="button" data-toggle="modal" data-target="#forgotModal" href="#">Forgot Password?</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="contactus.html">Contact Us</a>
-                  </div>
-                </li>
-            </ul>       
-                <form class="form-inline">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-        </nav>
-            <div id="loginModal" class="modal fade" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title">Login</h3>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <a class="navbar-brand" href="index.html">Art of Inspiration</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aiNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="aiNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="quotes.html">
+                Quotes</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Focal Points
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" role="button" href="happiness.html">Happiness</a>
+                  <a class="dropdown-item" role="button" href="health.html">Health</a>
+                  <a class="dropdown-item" role="button" href="success.html">Success</a>
+                  <a class="dropdown-item" role="button" href="love.html">Love</a>
+                  <a class="dropdown-item" role="button" href="money.html">Money</a>
             </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-12">
-                                <label class="sr-only" for="loginEmail">Email address</label>
-                                <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                            </div>
-                            <div class="form-group col-12">
-                                <label class="sr-only" for="loginPassword">Password</label>
-                                <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                            </div>
-                            <div class="col">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label"> Remember me</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                        </div>
-                    </form>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Members
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" role="button" data-toggle="modal" data-target="#loginModal" href="#">Login</a>
+                <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="contactus.html">Contact Us</a>
                 </div>
+              </li>
+            </ul>       
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title">Login</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+  </div>
+  <div class="modal-body">
+      <div class="container-fluid">
+          <form>
+              <div class="form-row">
+                  <div class="form-group col-12">
+                      <label class="sr-only" for="loginEmail">Email address</label>
+                      <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                  </div>
+                  <div class="form-group col-12">
+                      <label class="sr-only" for="loginPassword">Password</label>
+                      <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                  </div>
+                  <div class="col">
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label"> Remember me</label>
+                      </div>
+                          <a class="nav-item" role="button" data-toggle="modal" href="#" data-target="#forgotModal">
+                            <button type="button" class="btn btn-link btn-sm" style="margin-top: 15px;">Forgot Password ?</button>
+                          </a> 
+                      </div>
+                  </div>
+              <div class="form-row">
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+</div>
+</div>  
+<div id="forgotModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-12 al">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 style="text-align: center;"><i class="fa fa-lock fa-4x"></i></h2>
+                    <h3 class="modal-title" style="text-align: center;">Forgot Password?</h3>
+                    <p style="text-align: center;">You can reset your password here.</p>
             </div>
         </div>
     </div>
 </div>
-<div id="forgotModal" class="modal fade" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-md-12 al">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h2 style="text-align: center;"><i class="fa fa-lock fa-4x"></i></h2>
-                <h3 class="modal-title" style="text-align: center;">Forgot Password?</h3>
-                <p style="text-align: center;">You can reset your password here.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal-body">
-                <div class="container-fluid">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-12">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
-                                <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
-                        </div>
-                            <input type="hidden" class="hide" name="token" id="token" value=""> 
-                    </form>
-                </div>
+<div class="modal-body">
+      <div class="container-fluid">
+          <form>
+              <div class="form-row">
+                  <div class="form-group col-12">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                      <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
+                  </div>
               </div>
-          </div>
+              <div class="form-row">
+                  <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
+              </div>
+                  <input type="hidden" class="hide" name="token" id="token" value=""> 
+          </form>
       </div>
+    </div>
+</div>
+</div>
+</div>
+</header>
+  <div class="health">
+    <h1>Health and wellness</h1>
   </div>
-  </header>
-    <canvas id="canvas" width="1350" height="200"></canvas>
-  <div class="container">
-    <div class="row">
-      <div class="col">
+      <div class="audio-container-about">
           <audio controls>
           <source src="media/health.mp3" type="audio/mpeg">
           </audio>
       </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row row-content whatishealth">
-      <div class="col-sm-8 order-sm-first col-md-6">
-        <h3 class="text-sm-left"><b>What is health?</b></h3>
-        <p class="d-none d-sm-block">Health is a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity.
-          A resource for everyday life, not the objective of living. Health is a positive concept emphasizing social and personal resources, as well as physical capacities.
-          
-          This means that health is a resource to support an individual’s function in wider society, rather than an end in itself. A healthful lifestyle provides the means to lead a full life with meaning and purpose.
-        
-          Modern science take significant strides in the awareness of diseases by understanding how they work, discovering new ways to slow or stop them, and acknowledging that an absence of pathology may not be possible.</p>
-      </div>
-      <div class="col-sm-4 order-sm-last col-md-6">
-        <div class="media">
-          <img class="d-flex mr-3 img-thumbnail" src="img/health.jpg" alt="health" />
-        </div>
-      </div>
-    </div>
-    <div class="row row-content mentalhealth">
-      <div class="col-sm-4 order-sm-first col-md-6">
-        <div class="media">
-          <img class="d-flex mr-3 img-thumbnail" src="img/mentalhealth.jpg" alt="mentalhealth" />
-        </div>
-      </div>
-      <div class="col-sm-8 order-sm-last col-md-6">
-          <h3 class="text-sm-left"><b>Mental Health</b></h3>
-          <p class="d-none d-sm-block">Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.
-            Over the course of your life, if you experience mental health problems, your thinking, mood, and behavior could be affected. Many factors contribute to mental health problems, including:
-            
-            Biological factors, such as genes or brain chemistry,
-            Life experiences, such as trauma or abuse,
-            Family history of mental health problems,
-            Mental health problems are common but help is available. People with mental health problems can get better and many recover completely.
-          </p>
-      </div>
-    </div>
-    <div class="row row-content spiritualhealth">
-      <div class="col-sm-8 order-sm-first col-md-6">
-        <h3 class="text-sm-left"><b>Spiritual Health</b></h3>
-        <p class="d-none d-sm-block">Spirit is what can not be defined as part of the body or as part of the mind. Body, mind, and spirit all have an affect on one and other. By improving your spiritual life you can contribute to the healing process.
-           Spirituality may not be able to cure you, but it can help to cope with the pain and difficulties that accompany illness. Spiritual health is achieved when you feel at peace with life. It is when you are able to find hope and comfort in even the hardest of times. Spirituality is different for everyone.
-           When facing a chronic illness it may be easy to lose your spiritual health. There is a time in which you may be tempted to let go of your beliefs. It is important to remember that by keeping a healthy spiritual life you can better manage your physical health. Your spiritual life can help you to cope with any issues that may arise with your physical health. We are whole beings. Balance can keep us healthy and help us to recover.          
-          </p>
-      </div>
-      <div class="col-sm-4 order-sm-last col-md-6">
-        <div class="media">
-          <img class="d-flex mr-3 img-thumbnail" src="img/spiritualhealth.jpg" alt="spiritualhealth" />
-        </div>
-      </div>
-    </div>
-    <div class="row row-content healthy">
-      <div class="col-sm-4 order-sm-first col-md-6">
-        <div class="media">
-          <img class="d-flex mr-3 img-thumbnail" src="img/healthy.jpg" alt="healthy" />
-        </div>
-      </div>
-      <div class="col-sm-8 order-sm-last col-md-6">
-          <h3 class="text-sm-left"><b>Healthy Lifestyle</b></h3>
-          <p class="d-none d-sm-block">You know the obvious behaviors that describe someone who is healthy and takes care of themselves. A healthy person doesn't smoke, tries to maintain a healthy weight, eats healthy foods with plenty of fruits, vegetables and fiber and, of course, exercises on a regular basis.
-            Then there are other elements to add to the list. A healthy person also knows how to manage stress, gets good quality sleep each night, doesn't drink too much, doesn't sit too much basically, does everything in moderation all the time. When you look at everything that could possibly go into a healthy lifestyle.
-            You don't have to change everything at the same time. The trick to healthy living is making small changes taking more steps each day, adding fruit to your cereal, having an extra glass of water, or saying no to that second helping of buttery mashed potatoes. One thing you can do right now to make your lifestyle healthier is to move more.
-          </p>
-      </div>
-    </div>
-  </div>
-    <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="commonAi col-3 col-sm-3">
-              <h5 style="color: black;">Terms & Policies</h5>
-              <ul class="list-unstyled">
-                <li><a href="terms.html"> Terms & Conditions</a></li>
-                <li><a href="terms.html #privacy"> Privacy</a></li>
-                <li><a href="terms.html #anti-spam"> Anti-Spam</a></li>
-                <li><a href="terms.html #health-disclaimer"> Health Disclaimer</a></li>               
-              </ul>
-            </div>
-            <div class="socialMediaLinks col-4 col-sm-5 text-center">
-              <h5>Social</h5>
-              <a href="https://twitter.com" class="fa fa-twitter"></a>
-              <a href="https://facebook.com" class="fa fa-facebook"></a>
-              <a href="https://pinterest.com" class="fa fa-pinterest"></a>
-              <a href="https://instagram.com" class="fa fa-instagram"></a>
-              <a href="https://youtube.com" class="fa fa-youtube"></a>
-            </div>
-            <div class="col-3 text-center">
-                <h6 style="color: black;">Contact Us</h6>
-              <a role="button" class="btn btn-light" href="tel:+13063693639"><i class="fa fa-phone fa-sm"></i>
-                1-306-369-3639</a><br />
-              <a role="button" class="btn btn-light" href="mailto:artofinspiration@ai.com"><i class="fa fa-envelope fa-sm"></i>
-                artofinspiration@ai.com</a>
+      <div class="container">
+        <div class="row row-content">
+          <div class="col">
+            <div id="accordion">
+              <div class="card">
+                  <div role="tab" class="card-header">
+                    <h4>
+                        <a data-toggle="collapse" data-target="#bootstrap">
+                          What is health?
+                        </a>
+                      </h4>
+                      <div class="collapse" id="bootstrap" data-parent="#accordion">
+                          <div class="card-body">
+                              <div class="col-lg-9">
+                              <p style="text-indent: 40px;">Health is a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity.
+                                A resource for everyday life, not the objective of living. Health is a positive concept emphasizing social and personal resources, as well as physical capacities.
+                              </p>   
+                              <p style="text-indent: 40px;"> This means that health is a resource to support an individual’s function in wider society, rather than an end in itself. A healthful lifestyle provides the means to lead a full life with meaning and purpose.
+                              </p> 
+                              <p style="text-indent: 40px;"> Modern science take significant strides in the awareness of diseases by understanding how they work, discovering new ways to slow or stop them, and acknowledging that an absence of pathology may not be possible.
+                              </p>
+                              </div>
+                              <div class="col">
+                                <img class="d-flex mr-3 img-thumbnail" src="img/health.jpg" alt="health" />
+                              </div>
+                          </div>
+                      </div>  
+                  </div>
+              </div>
+              <div class="card">
+                  <div role="tab" class="card-header">
+                      <h4>
+                          <a class="collapsed" data-toggle="collapse" data-target="#git"> 
+                            Mental health
+                          </a>
+                      </h4>
+                      <div class="collapse" id="git" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="col-lg-8">
+                              <p style="text-indent: 40px;"> Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.                    
+                              </p>  
+                              <p style="text-indent: 40px;">  Over the course of your life, if you experience mental health problems, your thinking, mood, and behavior could be affected. Many factors contribute to mental health problems, including:                       
+                              <p> -Biological factors, such as genes or brain chemistry</p>
+                              <p> -Life experiences, such as trauma or abuse</p>
+                              <p> -Family history of mental health problems</p>
+                              </p>  
+                              <p style="text-indent: 40px;"> Mental health problems are common but help is available. People with mental health problems can get better and many recover completely.
+                              </p>
+                            </div>
+                            <div class="col">
+                              <img class="d-flex mr-3 img-thumbnail" src="img/mentalhealth.jpg" alt="mentalhealth" />
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div role="tab" class="card-header">
+                      <h4>
+                          <a class="collapsed" data-toggle="collapse" data-target="#mongo">   
+                            Spiritual health
+                          </a>  
+                      </h4>
+                      <div class="collapse" id="mongo" data-parent="#accordion">
+                          <div class="card-body">
+                             <div class="col-lg-6"> 
+                              <p style="text-indent: 40px;"> Spirit is what can not be defined as part of the body or as part of the mind. Body, mind, and spirit all have an affect on one and other. By improving your spiritual life you can contribute to the healing process.
+                              </p>
+                              <p style="text-indent: 40px;"> Spirituality may not be able to cure you, but it can help to cope with the pain and difficulties that accompany illness. Spiritual health is achieved when you feel at peace with life. It is when you are able to find hope and comfort in even the hardest of times. Spirituality is different for everyone.
+                                When facing a chronic illness it may be easy to lose your spiritual health.
+                              </p>  
+                              <p style="text-indent: 40px;"> There is a time in which you may be tempted to let go of your beliefs. It is important to remember that by keeping a healthy spiritual life you can better manage your physical health. Your spiritual life can help you to cope with any issues that may arise with your physical health. We are whole beings. Balance can keep us healthy and help us to recover. 
+                              </p>
+                             </div>
+                             <div class="col">
+                              <img class="d-flex mr-3 img-thumbnail" src="img/spiritualhealth.jpg" alt="spiritualhealth" />
+                             </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <div role="tab" class="card-header">
+                      <h4>
+                          <a class="collapsed" data-toggle="collapse" data-target="#node">  
+                            Healthy lifestyle
+                          </a>
+                      </h4>
+                      <div class="collapse" id="node" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="col">  
+                              <p style="text-indent: 40px;">You know the obvious behaviors that describe someone who is healthy and takes care of themselves. A healthy person doesn't smoke, tries to maintain a healthy weight, eats healthy foods with plenty of fruits, vegetables and fiber and, of course, exercises on a regular basis.
+                              </p>  
+                              <p style="text-indent: 40px;"> Then there are other elements to add to the list. A healthy person also knows how to manage stress, gets good quality sleep each night, doesn't drink too much, doesn't sit too much basically, does everything in moderation all the time. When you look at everything that could possibly go into a healthy lifestyle.
+                              </p>  
+                              <p style="text-indent: 40px;"> You don't have to change everything at the same time. The trick to healthy living is making small changes taking more steps each day, adding fruit to your cereal, having an extra glass of water, or saying no to that second helping of buttery mashed potatoes. One thing you can do right now to make your lifestyle healthier is to move more.
+                              </p>
+                            </div>
+                            <div class="col">
+                              <img class="d-flex mr-3 img-thumbnail" src="img/healthy.jpg" alt="healthy" />
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="commonAi col">
+          <h5 style="color: #ffff;">Terms & Policies</h5>
+          <ul class="list-unstyled">
+            <li><a href="terms.html"> Terms & Conditions</a></li>
+            <li><a href="terms.html #privacy"> Privacy</a></li>
+            <li><a href="terms.html #anti-spam"> Anti-Spam</a></li>
+            <li><a href="terms.html #health-disclaimer"> Health Disclaimer</a></li>               
+          </ul>
+        </div>
+        <div class="socialMediaLinks col">
+          <h5 style="color: #ffff;">Social</h5>
+          <a href="https://twitter.com" class="fa fa-twitter"></a>
+          <a href="https://facebook.com" class="fa fa-facebook"></a>
+          <a href="https://pinterest.com" class="fa fa-pinterest"></a>
+          <a href="https://instagram.com" class="fa fa-instagram"></a>
+          <a href="https://youtube.com" class="fa fa-youtube"></a>
+        </div>
+        <div class="col">
+            <h5 style="color: #ffff;">Contact Us</h5>
+          <a role="button" class="btn" style="color: #ffff;" href="tel:+13063693639"><i class="fa fa-phone fa-sm"></i>
+            1-306-369-3639</a><br />
+          <a role="button" class="btn" style="color: #ffff;" href="mailto:artofinspiration@ai.com"><i class="fa fa-envelope fa-sm"></i>
+            artofinspiration@ai.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

@@ -23,7 +23,7 @@ var img = new Image();
 // User Variables - customize these to change the image being scrolled, its
 // direction, and the speed.
 
-img.src = 'https://mdn.mozillademos.org/files/4553/Capitan_Meadows,_Yosemite_National_Park.jpg';
+img.src = 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/chicago-skyline-march-2019-kevin-eatinger.jpg';
 var CanvasXSize = 800;
 var CanvasYSize = 200;
 var speed = 30; // lower is faster
@@ -103,7 +103,6 @@ function draw() {
     // amount to move
     x += dx;
 }
-
 // Success
 var cn;
             //= document.getElementById('cw');

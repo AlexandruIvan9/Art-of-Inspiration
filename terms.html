@@ -13,128 +13,129 @@
    <title>Art of Inspiration</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light sticky-top bg-light">
-            <a class="navbar-brand" href="index.html">Art of Inspiration</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"><b>Home</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"><b>About</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quotes.html"><b>Quotes</b></a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
-                      Common AI Focal Points</b>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" role="button" href="happiness.html">Happiness</a>
-                      <a class="dropdown-item" role="button" href="health.html">Health</a>
-                      <a class="dropdown-item" role="button" href="success.html">Success</a>
-                      <a class="dropdown-item" role="button" href="love.html">Love</a>
-                      <a class="dropdown-item" role="button" href="money.html">Money</a>
-                    </div>
-                  </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
-                    Members</b>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" role="button" data-toggle="modal" data-target="#loginModal" href="#">Login</a>
-                    <a class="dropdown-item" role="button" data-toggle="modal" data-target="#forgotModal" href="#">Forgot Password?</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="contactus.html">Contact Us</a>
-                  </div>
-                </li>
-            </ul>       
-                <form class="form-inline">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-        </nav>
-            <div id="loginModal" class="modal fade" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title">Login</h3>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <a class="navbar-brand" href="index.html">Art of Inspiration</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aiNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="aiNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="quotes.html">
+                Quotes</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Focal Points
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" role="button" href="happiness.html">Happiness</a>
+                  <a class="dropdown-item" role="button" href="health.html">Health</a>
+                  <a class="dropdown-item" role="button" href="success.html">Success</a>
+                  <a class="dropdown-item" role="button" href="love.html">Love</a>
+                  <a class="dropdown-item" role="button" href="money.html">Money</a>
             </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-12">
-                                <label class="sr-only" for="loginEmail">Email address</label>
-                                <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                            </div>
-                            <div class="form-group col-12">
-                                <label class="sr-only" for="loginPassword">Password</label>
-                                <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                            </div>
-                            <div class="col">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label"> Remember me</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                        </div>
-                    </form>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Members
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" role="button" data-toggle="modal" data-target="#loginModal" href="#">Login</a>
+                <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="contactus.html">Contact Us</a>
                 </div>
+              </li>
+            </ul>       
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title">Login</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+  </div>
+  <div class="modal-body">
+      <div class="container-fluid">
+          <form>
+              <div class="form-row">
+                  <div class="form-group col-12">
+                      <label class="sr-only" for="loginEmail">Email address</label>
+                      <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                  </div>
+                  <div class="form-group col-12">
+                      <label class="sr-only" for="loginPassword">Password</label>
+                      <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                  </div>
+                  <div class="col">
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label"> Remember me</label>
+                      </div>
+                          <a class="nav-item" role="button" data-toggle="modal" href="#" data-target="#forgotModal">
+                            <button type="button" class="btn btn-link btn-sm" style="margin-top: 15px;">Forgot Password ?</button>
+                          </a> 
+                      </div>
+                  </div>
+              <div class="form-row">
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+</div>
+</div>  
+<div id="forgotModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-12 al">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 style="text-align: center;"><i class="fa fa-lock fa-4x"></i></h2>
+                    <h3 class="modal-title" style="text-align: center;">Forgot Password?</h3>
+                    <p style="text-align: center;">You can reset your password here.</p>
             </div>
         </div>
     </div>
 </div>
-<div id="forgotModal" class="modal fade" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-md-12 al">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h2 style="text-align: center;"><i class="fa fa-lock fa-4x"></i></h2>
-                <h3 class="modal-title" style="text-align: center;">Forgot Password?</h3>
-                <p style="text-align: center;">You can reset your password here.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal-body">
-                <div class="container-fluid">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-12">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
-                                <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
-                        </div>
-                            <input type="hidden" class="hide" name="token" id="token" value=""> 
-                    </form>
-                </div>
+<div class="modal-body">
+      <div class="container-fluid">
+          <form>
+              <div class="form-row">
+                  <div class="form-group col-12">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                      <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
+                  </div>
               </div>
-          </div>
+              <div class="form-row">
+                  <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
+              </div>
+                  <input type="hidden" class="hide" name="token" id="token" value=""> 
+          </form>
       </div>
+    </div>
+</div>
+</div>
+</div>
+</header>
+  <div class="termss">
+    <h1>Terms & Policies</h1>
   </div>
-  </header>
   <div class="container terms">
       <div class="row row-content">
         <div class="col">
-            <h1><a id="privacy">Terms & Conditions</a></h1>
+            <h1 style="margin-left: 40px;"><a id="privacy">Terms & Conditions</a></h1>
+            <p> </p>
             <p>This page (and the documents it refers to) tells you the terms of use on which you may use our website Art of Inspiration, whether as a guest or a registered user. Please read these terms of use carefully before you start to use the site. By using our site, you accept these terms of use and agree to abide by them. If you do not agree to these terms of use, please do not use our site.</p>
             <p>We allow access to our site on a temporary basis and we reserve the right to withdraw, restrict or change our site at any time and without notice. We will not be liable if for any reason our site is unavailable at any time or if the content is changed or out of date.
 
@@ -144,7 +145,8 @@
             
             It is your responsibility that anyone who accesses our site through your internet connection is aware of these terms and complies with them.</p>
             <p> </p>
-            <h1><a id="anti-spam">Privacy</a></h1>
+            <h1 style="margin-left: 40px;"><a id="anti-spam">Privacy</a></h1>
+            <p> </p>
             <p>This privacy notice provides you with details of how we collect and process your personal data through your use of our site artofinspiration.co.
                 By providing us with your data, you warrant to us that you are over 13 years of age.
             </p>
@@ -156,7 +158,7 @@
             Where we are required to collect personal data by law, or under the terms of the contract between us and you do not provide us with that data when requested, we may not be able to perform the contract (for example, to deliver goods or services to you). If you don’t provide us with the requested data, we may have to cancel a product or service you have ordered but if we do, we will notify you at the time.
             </p>
             <p> </p>
-            <h1>Anti-Spam</h1>
+            <h1 style="margin-left: 40px;">Anti-Spam</h1>
             <p>The following statement applies to artofinspiration.co website or services that feature or link to this notice. artofinspiration.co forbids the utilization of this site in any way when associated with the transmission or dispersal of any unsolicited commercial or bulk e-mail – Spam.
                 You are forbidden from utilizing any services from artofinspiration.co to send Spam or that may cause Spam to be distributed to any artofinspiration.co customers or services.
             </p>
@@ -182,7 +184,7 @@
             <p><a id="health-disclaimer">Unlawful utilization of the services in association with the transmitting or sending of any unsolicited e-mail may result in civil, criminal or administrative penalties contrary to the sender or those supporting the sender.</a>
             </p>
             <p> </p>
-            <h1>Health Disclaimer</h1>
+            <h1 style="margin-left: 40px;">Health Disclaimer</h1>
             <p>This site provides wellness management in an informational and educational manner only, with information that is general in nature and that is not specific to any individual.
 
                 The information on this site is not intended or implied to be a substitute for professional medical advice, diagnosis or treatment. All content, including text, graphics, images and information, contained on or available through this website is for general information purposes only.
@@ -204,8 +206,8 @@
   <footer class="site-footer">
     <div class="container">
       <div class="row">
-        <div class="commonAi col-3 col-sm-3">
-          <h5 style="color: black;">Terms & Policies</h5>
+        <div class="commonAi col">
+          <h5 style="color: #ffff;">Terms & Policies</h5>
           <ul class="list-unstyled">
             <li><a href="terms.html"> Terms & Conditions</a></li>
             <li><a href="terms.html #privacy"> Privacy</a></li>
@@ -213,24 +215,24 @@
             <li><a href="terms.html #health-disclaimer"> Health Disclaimer</a></li>               
           </ul>
         </div>
-        <div class="socialMediaLinks col-4 col-sm-5 text-center">
-          <h5>Social</h5>
+        <div class="socialMediaLinks col">
+          <h5 style="color: #ffff;">Social</h5>
           <a href="https://twitter.com" class="fa fa-twitter"></a>
           <a href="https://facebook.com" class="fa fa-facebook"></a>
           <a href="https://pinterest.com" class="fa fa-pinterest"></a>
           <a href="https://instagram.com" class="fa fa-instagram"></a>
           <a href="https://youtube.com" class="fa fa-youtube"></a>
         </div>
-        <div class="col-3 text-center">
-            <h6 style="color: black;">Contact Us</h6>
-          <a role="button" class="btn btn-light" href="tel:+13063693639"><i class="fa fa-phone fa-sm"></i>
+        <div class="col">
+            <h5 style="color: #ffff;">Contact Us</h5>
+          <a role="button" class="btn" style="color: #ffff;" href="tel:+13063693639"><i class="fa fa-phone fa-sm"></i>
             1-306-369-3639</a><br />
-          <a role="button" class="btn btn-light" href="mailto:artofinspiration@ai.com"><i class="fa fa-envelope fa-sm"></i>
+          <a role="button" class="btn" style="color: #ffff;" href="mailto:artofinspiration@ai.com"><i class="fa fa-envelope fa-sm"></i>
             artofinspiration@ai.com</a>
         </div>
       </div>
     </div>
-</footer>
+  </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

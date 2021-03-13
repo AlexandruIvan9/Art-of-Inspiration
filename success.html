@@ -17,243 +17,287 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light sticky-top bg-light">
-            <a class="navbar-brand" href="index.html">Art of Inspiration</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+          <a class="navbar-brand" href="index.html">Art of Inspiration</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aiNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="aiNavbar">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"><b>Home</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"><b>About</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quotes.html"><b>Quotes</b></a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
-                      Common AI Focal Points</b>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="quotes.html">
+                    Quotes</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Focal Points
+                  </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" role="button" href="happiness.html">Happiness</a>
                       <a class="dropdown-item" role="button" href="health.html">Health</a>
                       <a class="dropdown-item" role="button" href="success.html">Success</a>
                       <a class="dropdown-item" role="button" href="love.html">Love</a>
                       <a class="dropdown-item" role="button" href="money.html">Money</a>
+                </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Members
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" role="button" data-toggle="modal" data-target="#loginModal" href="#">Login</a>
+                    <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="contactus.html">Contact Us</a>
                     </div>
                   </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>
-                    Members</b>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" role="button" data-toggle="modal" data-target="#loginModal" href="#">Login</a>
-                    <a class="dropdown-item" role="button" data-toggle="modal" data-target="#forgotModal" href="#">Forgot Password?</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="contactus.html">Contact Us</a>
-                  </div>
-                </li>
-            </ul>       
+                </ul>       
                 <form class="form-inline">
                   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                 </form>
+            </div>
         </nav>
-            <div id="loginModal" class="modal fade" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title">Login</h3>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-12">
-                                <label class="sr-only" for="loginEmail">Email address</label>
-                                <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                            </div>
-                            <div class="form-group col-12">
-                                <label class="sr-only" for="loginPassword">Password</label>
-                                <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                            </div>
-                            <div class="col">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label"> Remember me</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="forgotModal" class="modal fade" role="dialog">
-    <div class="modal-dialog" role="document">
+        <div id="loginModal" class="modal fade" role="dialog">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Login</h3>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+          <div class="container-fluid">
+              <form>
+                  <div class="form-row">
+                      <div class="form-group col-12">
+                          <label class="sr-only" for="loginEmail">Email address</label>
+                          <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                      </div>
+                      <div class="form-group col-12">
+                          <label class="sr-only" for="loginPassword">Password</label>
+                          <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                      </div>
+                      <div class="col">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox">
+                              <label class="form-check-label"> Remember me</label>
+                          </div>
+                              <a class="nav-item" role="button" data-toggle="modal" href="#" data-target="#forgotModal">
+                                <button type="button" class="btn btn-link btn-sm" style="margin-top: 15px;">Forgot Password ?</button>
+                              </a> 
+                          </div>
+                      </div>
+                  <div class="form-row">
+                      <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                      <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  </div>
+  </div>  
+    <div id="forgotModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-md-12 al">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h2 style="text-align: center;"><i class="fa fa-lock fa-4x"></i></h2>
-                <h3 class="modal-title" style="text-align: center;">Forgot Password?</h3>
-                <p style="text-align: center;">You can reset your password here.</p>
+                        <h2 style="text-align: center;"><i class="fa fa-lock fa-4x"></i></h2>
+                        <h3 class="modal-title" style="text-align: center;">Forgot Password?</h3>
+                        <p style="text-align: center;">You can reset your password here.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal-body">
-                <div class="container-fluid">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-12">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
-                                <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
-                        </div>
-                            <input type="hidden" class="hide" name="token" id="token" value=""> 
-                    </form>
-                </div>
-              </div>
+  </div>
+  <div class="modal-body">
+          <div class="container-fluid">
+              <form>
+                  <div class="form-row">
+                      <div class="form-group col-12">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
+                          <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
+                      </div>
+                  </div>
+                  <div class="form-row">
+                      <input name="recover-submit" class="btn btn-lg btn-primary btn-block" value="Reset Password" type="submit">
+                  </div>
+                      <input type="hidden" class="hide" name="token" id="token" value=""> 
+              </form>
           </div>
-      </div>
+        </div>
+    </div>
+  </div>
   </div>
   </header>
-    <canvas id="cw"></canvas>   
-    <div class="container">
-        <div class="row" style="padding-top: 100px;">
-            <div class="col">
-                <audio controls>
-                    <source src="media/success.mp3" type="audio/mpeg">
-                    </audio>    
-            </div>
-        </div>
+    <div class="successs">
+        <h1>Success belongs to you</h1>
     </div>
-    <div class="container">
-        <div class="row row-content success">
-            <div class="col-sm-8 order-sm-first col-md-6">
-            <h3 class="text-sm-left"><b>Defining Success</b></h3>
-            <p class="d-none d-sm-block"> Success is peace of mind, which is a direct result of self-satisfaction in knowing you made the effort to do your best to become the best that you are capable of becoming.
-                Success is an attitude. Success requires maximum effort. It is peace of mind and a state of mind. And please note the emphasis on “self” in self-satisfaction. Your success should never be determined by the approval or recognition of others. If so, you’ll live a highly disappointing life.
-                This is really simple: If you have the idea to begin something, you should at least have a BIG dream in mind of what success or self-fulfillment will look like. That comes through the power of imagination. Imagination needs to lead to organized planning.
-                That is where the definition of success kicks in, which is then followed by objectives, goals and tasks from the large to small-scale efforts. If you’re serious about becoming great at what you do and reaching your maximum potential, you will find the time to define what success means for you.
-                There is power in reciting your plan- your dreams- by speaking them out loud. Last but not least, you mix faith with your written and spoken words, to fuse them together; the rest is all about executing your plan. You need the courage and energy to propel yourself forward and never look back, as long as you believe you’re on the right path.
-            </p>
-            </div>
-            <div class="col-sm-4 order-sm-last col-md-6">
-            <div class="media">
-                <img class="d-flex mr-3 img-thumbnail" src="img/success.jpg" alt="success" />
-            </div>
-            </div>
-        </div>
-        <div class="row row-content plansuccess">
-            <div class="col-sm-6">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/plansuccess.jpg" alt="plansuccess" />
-                </div>
-                </div>
-                    <div class="col-sm-8 order-sm-last col-md-6">
-                    <h4 class="order-sm-last"><b>Plan for Success</b></h4>
-                    <p class="d-none d-sm-block">A life where you would crush all your undesired habits, replace them for healthier ones, and finally, reach the top of the mountain. The one you’ve been climbing for so long.
-                        Now, for the most part, if you look back exactly one year, you’ll probably see the same issues plaguing your life.
-                        Whether that’s a lack of money, not being as fit as you desire, struggling to find a meaningful relationship, or an overall lack of discipline to stick to any of these for long enough, these issues have been repeating themselves, most likely, throughout your life, haven’t they?
-                        This isn’t the first time you’re dealing with them but, if I had to guess, you’re taking the same approach that you’ve always taken.
-                        You came hoping for practical advice and I’m hitting you with the “mindset”.
-                        To keep this one short, so that we can dive into the nuts and bolts of it all, know this:
-                        You must focus on the long-term.
-                        Whatever hopes and dreams you have of seeing any result within the next month must be forgotten.
-                        Instead, look 6 months, 1 year, 5 years into the future.
-                        By doing this, not only will your plan be much more doable, but you will also be able to enjoy the process and focus on what you’re doing.
-                    </p>
-                    </div>
-            </div>
-            <div class="row row-content purposesuccess">
-                <div class="col-sm-8 oder-sm-first col-md-6">
-                <h5 class="text-sm-left"><b>Purpose of Success</b></h5>
-                <p class="d-none d-sm-block">Our success needs a purpose. We need to do something with it.
-                    You are a success so that other people may also experience success.
-                    I encourage you to take what you have been blessed with — whether that be a large fortune, a supporting family, or a wide influence — and use that to bless the people around you.
-                    What would the world look like if everyone had this mentality? Would things like poverty be an issue?
-                    What are you doing with your success? Big or small, it can be used to help other people.
-                    Your greatness is not great until you do something great with it.
-                    I challenge you to think about this today.
-                    Make a donation. Buy someone’s coffee. Write a thoughtful letter. Share what you have.
-                    Remember, you are a success so that other people may also experience success.
-                    </p>
-                </div>
-                    <div class="col-sm-4 order-sm-last col-md-6">
-                    <div class="media">
-                        <img class="d-flex mr-3 img-thumbnail" src="img/purposesuccess.jpg" alt="purposesuccess" />
-                    </div>
-                    </div>
-                </div>
-            <div class="row row-content findpurpose">
-                <div class="col-sm-6">
-                <div class="media">
-                        <img class="d-flex mr-3 img-thumbnail" src="img/findpurpose.jpg" alt="findpurpose" />
-                </div>
-                </div>
-                <div class="col-sm-8 order-sm-last col-md-6">
-                        <h4 class="order-sm-last"><b>Find your purpose</b></h4>
-                            <p class="d-none d-sm-block">Do you have a sense of purpose?
-                                For decades, psychologists have studied how long-term, meaningful goals develop over the span of our lives. The goals that foster a sense of purpose are ones that can potentially change the lives of other people, like launching an organization, researching disease, or teaching kids to read.
-                                Indeed, a sense of purpose appears to have evolved in humans so that we can accomplish big things together—which may be why it’s associated with better physical and mental health. Purpose is adaptive, in an evolutionary sense. It helps both individuals and the species to survive.
-                                Many seem to believe that purpose arises from your special gifts and sets you apart from other people—but that’s only part of the truth. It also grows from our connection to others, which is why a crisis of purpose is often a symptom of isolation. Once you find your path, you’ll almost certainly find others traveling along with you, hoping to reach the same destination—a community.</p>
-                                Gratitude and altruism seem to work together to generate meaning and purpose. In a second experiment, the researchers randomly assigned some participants to write letters of gratitude—and those people later reported a stronger sense of purpose.
-                                Although there is no research that directly explores how being thanked might fuel a sense of purpose, we do know that gratitude strengthens relationships—and those are often the source of our purpose, as many of these stories suggest.
-                                Reading can help you find your purpose—but so can writing,
-                                Purpose often arises from curiosity about your own life. What obstacles have you encountered? What strengths helped you to overcome them? How did other people help you? How did your strengths help make life better for others?
-                </div>
-            </div>
-        </div>
 
-    
-
-    <footer class="site-footer">
+        <div class="audio-container-about">
+            <audio controls>
+                <source src="media/success.mp3" type="audio/mpeg">
+            </audio>    
+        </div>
+     
         <div class="container">
-        <div class="row">
-            <div class="commonAi col-3 col-sm-3">
-            <h5 style="color: black;">Terms & Policies</h5>
-            <ul class="list-unstyled">
-                <li><a href="terms.html"> Terms & Conditions</a></li>
-                <li><a href="terms.html #privacy"> Privacy</a></li>
-                <li><a href="terms.html #anti-spam"> Anti-Spam</a></li>
-                <li><a href="terms.html #health-disclaimer"> Health Disclaimer</a></li>               
-            </ul>
+            <div class="row row-content">
+              <div class="col">
+                <div id="accordion">
+                  <div class="card">
+                      <div role="tab" class="card-header">
+                        <h4>
+                            <a data-toggle="collapse" data-target="#bootstrap">
+                                Defining success
+                            </a>
+                          </h4>
+                          <div class="collapse" id="bootstrap" data-parent="#accordion">
+                              <div class="card-body">
+                                  <div class="col">
+                                  <p style="text-indent: 40px;">Success is peace of mind, which is a direct result of self-satisfaction in knowing you made the effort to do your best to become the best that you are capable of becoming.
+                                    Success is an attitude. Success requires maximum effort. 
+                                  </p>   
+                                  <p style="text-indent: 40px;"> It is peace of mind and a state of mind. And please note the emphasis on “self” in self-satisfaction. Your success should never be determined by the approval or recognition of others. If so, you’ll live a highly disappointing life.
+                                    This is really simple: If you have the idea to begin something, you should at least have a BIG dream in mind of what success or self-fulfillment will look like. That comes through the power of imagination. Imagination needs to lead to organized planning.
+                                    That is where the definition of success kicks in, which is then followed by objectives, goals and tasks from the large to small-scale efforts.
+                                  </p> 
+                                  <p style="text-indent: 40px;"> If you’re serious about becoming great at what you do and reaching your maximum potential, you will find the time to define what success means for you.
+                                    There is power in reciting your plan- your dreams- by speaking them out loud. Last but not least, you mix faith with your written and spoken words, to fuse them together; the rest is all about executing your plan. You need the courage and energy to propel yourself forward and never look back, as long as you believe you’re on the right path.
+                                  </p>
+                                  </div>
+                                  <div class="col">
+                                    <img class="d-flex mr-3 img-thumbnail" src="img/success.jpg" alt="success" />
+                                  </div>
+                              </div>
+                          </div>  
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div role="tab" class="card-header">
+                          <h4>
+                              <a class="collapsed" data-toggle="collapse" data-target="#git"> 
+                                Plan for success
+                              </a>
+                          </h4>
+                          <div class="collapse" id="git" data-parent="#accordion">
+                              <div class="card-body">
+                                <div class="col-lg-8">
+                                  <p style="text-indent: 40px;"> A life where you would crush all your undesired habits, replace them for healthier ones, and finally, reach the top of the mountain. The one you’ve been climbing for so long.
+                                    Now, for the most part, if you look back exactly one year, you’ll probably see the same issues plaguing your life.
+                                    Whether that’s a lack of money, not being as fit as you desire, struggling to find a meaningful relationship, or an overall lack of discipline to stick to any of these for long enough, these issues have been repeating themselves, most likely, throughout your life, haven’t they?
+                                  </p>  
+                                  <p style="text-indent: 40px;">  This isn’t the first time you’re dealing with them but, if I had to guess, you’re taking the same approach that you’ve always taken.
+                                    You came hoping for practical advice and I’m hitting you with the “mindset”.
+                                    To keep this one short, so that we can dive into the nuts and bolts of it all, know this:
+                                    You must focus on the long-term.
+                                  </p>  
+                                  <p style="text-indent: 40px;"> Whatever hopes and dreams you have of seeing any result within the next month must be forgotten.
+                                    Instead, look 6 months, 1 year, 5 years into the future.
+                                    By doing this, not only will your plan be much more doable, but you will also be able to enjoy the process and focus on what you’re doing.    
+                                  </p>
+                                </div>
+                                <div class="col">
+                                    <img class="d-flex mr-3 img-thumbnail" src="img/plansuccess.jpg" alt="plansuccess" />
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div role="tab" class="card-header">
+                          <h4>
+                              <a class="collapsed" data-toggle="collapse" data-target="#mongo">   
+                                Purpose of success
+                              </a>  
+                          </h4>
+                          <div class="collapse" id="mongo" data-parent="#accordion">
+                              <div class="card-body">
+                                 <div class="col"> 
+                                  <p style="text-indent: 40px;"> Our success needs a purpose. We need to do something with it.
+                                    You are a success so that other people may also experience success.
+                                    I encourage you to take what you have been blessed with — whether that be a large fortune, a supporting family, or a wide influence — and use that to bless the people around you.   
+                                  </p>
+                                  <p style="text-indent: 40px;"> What would the world look like if everyone had this mentality? Would things like poverty be an issue?
+                                    What are you doing with your success? Big or small, it can be used to help other people.
+                                    Your greatness is not great until you do something great with it.
+                                  </p>  
+                                  <p style="text-indent: 40px;"> I challenge you to think about this today.
+                                    Make a donation. Buy someone’s coffee. Write a thoughtful letter. Share what you have.
+                                    Remember, you are a success so that other people may also experience success.
+                                  </p>
+                                 </div>
+                                 <div class="col">
+                                    <img class="d-flex mr-3 img-thumbnail" src="img/purposesuccess.jpg" alt="purposesuccess" />
+                                 </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div role="tab" class="card-header">
+                          <h4>
+                              <a class="collapsed" data-toggle="collapse" data-target="#node">  
+                                Find your purpose
+                              </a>
+                          </h4>
+                          <div class="collapse" id="node" data-parent="#accordion">
+                              <div class="card-body">
+                                <div class="col">  
+                                  <p style="text-indent: 40px;"> Do you have a sense of purpose?
+                                    For decades, psychologists have studied how long-term, meaningful goals develop over the span of our lives. The goals that foster a sense of purpose are ones that can potentially change the lives of other people, like launching an organization, researching disease, or teaching kids to read.
+                                    Indeed, a sense of purpose appears to have evolved in humans so that we can accomplish big things together—which may be why it’s associated with better physical and mental health. Purpose is adaptive, in an evolutionary sense. It helps both individuals and the species to survive.  
+                                  </p>  
+                                  <p style="text-indent: 40px;"> Many seem to believe that purpose arises from your special gifts and sets you apart from other people—but that’s only part of the truth. It also grows from our connection to others, which is why a crisis of purpose is often a symptom of isolation. Once you find your path, you’ll almost certainly find others traveling along with you, hoping to reach the same destination—a community.
+                                  Gratitude and altruism seem to work together to generate meaning and purpose. In a second experiment, the researchers randomly assigned some participants to write letters of gratitude—and those people later reported a stronger sense of purpose.
+                                  </p>  
+                                  <p style="text-indent: 40px;"> Although there is no research that directly explores how being thanked might fuel a sense of purpose, we do know that gratitude strengthens relationships—and those are often the source of our purpose, as many of these stories suggest.
+                                    Reading can help you find your purpose—but so can writing,
+                                    Purpose often arises from curiosity about your own life. What obstacles have you encountered? What strengths helped you to overcome them? How did other people help you? How did your strengths help make life better for others?
+                                  </p>
+                                </div>
+                                <div class="col">
+                                    <img class="d-flex mr-3 img-thumbnail" src="img/findpurpose.jpg" alt="findpurpose" />
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="socialMediaLinks col-4 col-sm-5 text-center">
-            <h5>Social</h5>
-            <a href="https://twitter.com" class="fa fa-twitter"></a>
-            <a href="https://facebook.com" class="fa fa-facebook"></a>
-            <a href="https://pinterest.com" class="fa fa-pinterest"></a>
-            <a href="https://instagram.com" class="fa fa-instagram"></a>
-            <a href="https://youtube.com" class="fa fa-youtube"></a>
+          </div>
+
+        <footer class="site-footer">
+            <div class="container">
+              <div class="row">
+                <div class="commonAi col">
+                  <h5 style="color: #ffff;">Terms & Policies</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="terms.html"> Terms & Conditions</a></li>
+                    <li><a href="terms.html #privacy"> Privacy</a></li>
+                    <li><a href="terms.html #anti-spam"> Anti-Spam</a></li>
+                    <li><a href="terms.html #health-disclaimer"> Health Disclaimer</a></li>               
+                  </ul>
+                </div>
+                <div class="socialMediaLinks col">
+                  <h5 style="color: #ffff;">Social</h5>
+                  <a href="https://twitter.com" class="fa fa-twitter"></a>
+                  <a href="https://facebook.com" class="fa fa-facebook"></a>
+                  <a href="https://pinterest.com" class="fa fa-pinterest"></a>
+                  <a href="https://instagram.com" class="fa fa-instagram"></a>
+                  <a href="https://youtube.com" class="fa fa-youtube"></a>
+                </div>
+                <div class="col">
+                    <h5 style="color: #ffff;">Contact Us</h5>
+                  <a role="button" class="btn" style="color: #ffff;" href="tel:+13063693639"><i class="fa fa-phone fa-sm"></i>
+                    1-306-369-3639</a><br />
+                  <a role="button" class="btn" style="color: #ffff;" href="mailto:artofinspiration@ai.com"><i class="fa fa-envelope fa-sm"></i>
+                    artofinspiration@ai.com</a>
+                </div>
+              </div>
             </div>
-            <div class="col-3 text-center">
-                <h6 style="color: black;">Contact Us</h6>
-            <a role="button" class="btn btn-light" href="tel:+13063693639"><i class="fa fa-phone fa-sm"></i>
-                1-306-369-3639</a><br />
-            <a role="button" class="btn btn-light" href="mailto:artofinspiration@ai.com"><i class="fa fa-envelope fa-sm"></i>
-                artofinspiration@ai.com</a>
-            </div>
-        </div>
-        </div>
-    </footer>
+          </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
