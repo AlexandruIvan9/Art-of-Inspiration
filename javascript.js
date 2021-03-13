@@ -1,23 +1,4 @@
-// Happiness, Love, Money
-let start = Date.now();
-
-let timer = setInterval(function() {
-  
-  let timePassed = Date.now() - start;
-
-  if (timePassed >= 2000) {
-    clearInterval(timer); 
-    return;
-  }
-
-  draw(timePassed);
-
-}, 20);
-
-function draw(timePassed) {
-  train.style.left = timePassed / 5 + 'px';
-}
-// Health
+// Contact us
 var img = new Image();
 
 // User Variables - customize these to change the image being scrolled, its
@@ -103,7 +84,8 @@ function draw() {
     // amount to move
     x += dx;
 }
-// Success
+
+// Entry page
 var cn;
             //= document.getElementById('cw');
             var c;
