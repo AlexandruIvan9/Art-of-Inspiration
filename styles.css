@@ -21,6 +21,10 @@ h5 {
     padding-top: 550px;
 }
 
+.navbar a:hover {
+    color: #989599;
+}
+
 .navbar {
   width: 100%;
   position: fixed;
