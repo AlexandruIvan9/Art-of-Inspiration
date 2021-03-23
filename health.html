@@ -138,15 +138,14 @@
     <div class="container">
       <div class="row row-content">
         <div class="col">
-          <div id="accordion">
+          <div class="accordion" id="accordion">
             <div class="card">
-              <div role="tab" class="card-header">
-                <h4>
-                  <a data-toggle="collapse" data-target="#bootstrap">
+              <div class="card-header" id="headingOne">
+                <h4 class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                           What is health?
-                  </a>
                 </h4>
-                <div class="collapse" id="bootstrap" data-parent="#accordion">
+              </div>
+                <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
                   <div class="card-body">
                     <div class="col-lg-9">
                       <p style="text-indent: 40px;">Health is a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity.
@@ -164,15 +163,13 @@
                   </div>
                 </div>  
               </div>
-            </div>
             <div class="card">
-              <div role="tab" class="card-header">
-                <h4>
-                  <a class="collapsed" data-toggle="collapse" data-target="#git"> 
+              <div class="card-header" id="headingTwo">
+                <h4 class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 
                             Mental health
-                  </a>
                 </h4>
-                <div class="collapse" id="git" data-parent="#accordion">
+              </div>
+                <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
                   <div class="card-body">
                     <div class="col-lg-8">
                       <p style="text-indent: 40px;"> Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. 
@@ -194,15 +191,13 @@
                   </div>
                 </div>
               </div>
-            </div>
             <div class="card">
-              <div role="tab" class="card-header">
-                <h4>
-                  <a class="collapsed" data-toggle="collapse" data-target="#mongo">   
+              <div class="card-header" id="headingThree">
+                <h4 class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">   
                             Spiritual health
-                  </a>  
                 </h4>
-                <div class="collapse" id="mongo" data-parent="#accordion">
+              </div>
+                <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
                   <div class="card-body">
                     <div class="col-lg-6"> 
                       <p style="text-indent: 40px;"> Spirit is what can not be defined as part of the body or as part of the mind. Body, mind, and spirit all have an affect on one and other. 
@@ -222,15 +217,13 @@
                   </div>
                 </div>
               </div>
-            </div>
             <div class="card">
-              <div role="tab" class="card-header">
-                <h4>
-                  <a class="collapsed" data-toggle="collapse" data-target="#node">  
+              <div class="card-header" id="headingFour">
+                <h4 class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">  
                             Healthy lifestyle
-                  </a>
                 </h4>
-                <div class="collapse" id="node" data-parent="#accordion">
+              </div>
+                <div class="collapse" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion">
                   <div class="card-body">
                     <div class="col">  
                       <p style="text-indent: 40px;">You know the obvious behaviors that describe someone who is healthy and takes care of themselves. 
